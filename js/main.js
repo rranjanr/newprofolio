@@ -34,14 +34,38 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            // Let form submit naturally to diagnose the Formspree issue
-            // Display success message
-            setTimeout(() => {
-                contactSuccess.classList.remove('hidden');
-                setTimeout(() => {
-                    contactSuccess.classList.add('hidden');
-                }, 5000);
-            }, 1000);
+            e.preventDefault(); // Prevent default form submission
+            
+            // Get form data
+            const formData = new FormData(contactForm);
+            
+            // Submit to Formspree
+            fetch("https://formspree.io/f/mldjwlyk", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    "Accept": "application/json"
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Show success message
+                    contactSuccess.classList.remove('hidden');
+                    contactForm.reset(); // Clear the form
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        contactSuccess.classList.add('hidden');
+                    }, 5000);
+                } else {
+                    console.error("Form submission failed");
+                    alert("Form submission failed. Please try again or email me directly.");
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                alert("Sorry, there was a problem with the form submission. Please try again or email me directly.");
+            });
         });
     }
     
