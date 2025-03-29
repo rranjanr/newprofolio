@@ -64,7 +64,8 @@ This website is designed to be easily deployed on GitHub Pages:
 
 ## Image Credits
 
-For this demo version, placeholder images are used. In a production environment, replace them with your own images.
+i have uses my project images 
+
 
 ## License
 
