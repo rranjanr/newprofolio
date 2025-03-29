@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const formData = new FormData(contactForm);
             
             // Send data to Formspree
-            fetch("https://formspree.io/f/mldjwlyk", {
+            fetch(contactForm.action, {
                 method: "POST",
                 body: formData,
                 headers: {
@@ -58,30 +58,15 @@ document.addEventListener('DOMContentLoaded', function() {
                         contactSuccess.classList.add('hidden');
                     }, 5000);
                 } else {
-                    throw new Error('Form submission failed');
+                    console.error('Submission failed');
+                    alert('Form submission failed. Please try again or email me directly.');
                 }
             })
             .catch(error => {
                 console.error('Error:', error);
-                alert('Sorry, there was a problem submitting your form. Please try again later.');
+                alert('Sorry, there was a problem submitting your form. Please try again later or email me directly.');
             });
         });
-    }
-    
-    // Check if we're returning from form submission (hash will be #contact-success)
-    if (window.location.hash === '#contact-success') {
-        if (contactSuccess) {
-            // Show success message
-            contactSuccess.classList.remove('hidden');
-            contactForm.reset();
-            
-            // Hide success message after 5 seconds
-            setTimeout(() => {
-                contactSuccess.classList.add('hidden');
-                // Remove the hash from the URL
-                history.pushState("", document.title, window.location.pathname);
-            }, 5000);
-        }
     }
     
     // Initialize Snow Effect
