@@ -36,16 +36,52 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // In a real scenario, you would send the form data to a server
-            // For GitHub Pages demo, we'll just show a success message
+            // Get form data
+            const formData = new FormData(contactForm);
+            
+            // Send data to Formspree
+            fetch("https://formspree.io/f/mldjwlyk", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Show success message
+                    contactSuccess.classList.remove('hidden');
+                    contactForm.reset();
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        contactSuccess.classList.add('hidden');
+                    }, 5000);
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Sorry, there was a problem submitting your form. Please try again later.');
+            });
+        });
+    }
+    
+    // Check if we're returning from form submission (hash will be #contact-success)
+    if (window.location.hash === '#contact-success') {
+        if (contactSuccess) {
+            // Show success message
             contactSuccess.classList.remove('hidden');
             contactForm.reset();
             
             // Hide success message after 5 seconds
             setTimeout(() => {
                 contactSuccess.classList.add('hidden');
+                // Remove the hash from the URL
+                history.pushState("", document.title, window.location.pathname);
             }, 5000);
-        });
+        }
     }
     
     // Initialize Snow Effect
