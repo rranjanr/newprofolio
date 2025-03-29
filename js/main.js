@@ -28,45 +28,32 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Contact form submission
+    // Contact form submission - let the form submit naturally to Formspree
     const contactForm = document.getElementById('contact-form');
     const contactSuccess = document.getElementById('contact-success');
     
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent default form submission
-            
-            // Get form data
-            const formData = new FormData(contactForm);
-            
-            // Submit to Formspree
-            fetch("https://formspree.io/f/mldjwlyk", {
-                method: "POST",
-                body: formData,
-                headers: {
-                    "Accept": "application/json"
-                }
-            })
-            .then(response => {
-                if (response.ok) {
-                    // Show success message
-                    contactSuccess.classList.remove('hidden');
-                    contactForm.reset(); // Clear the form
-                    
-                    // Hide success message after 5 seconds
-                    setTimeout(() => {
-                        contactSuccess.classList.add('hidden');
-                    }, 5000);
-                } else {
-                    console.error("Form submission failed");
-                    alert("Form submission failed. Please try again or email me directly.");
-                }
-            })
-            .catch(error => {
-                console.error("Error:", error);
-                alert("Sorry, there was a problem with the form submission. Please try again or email me directly.");
+    // Check if URL contains success parameter (after Formspree redirect)
+    if (window.location.search.includes('success=true') && contactSuccess) {
+        contactSuccess.classList.remove('hidden');
+        
+        // Scroll to contact section
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            window.scrollTo({
+                top: contactSection.offsetTop - 100,
+                behavior: 'smooth'
             });
-        });
+        }
+        
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+            contactSuccess.classList.add('hidden');
+            
+            // Remove success parameter from URL
+            const url = new URL(window.location);
+            url.searchParams.delete('success');
+            window.history.replaceState({}, document.title, url);
+        }, 5000);
     }
     
     // Initialize Snow Effect
