@@ -56,7 +56,7 @@
                     <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white mr-3">
                         <i class="fas fa-code"></i>
                     </div>
-                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">R Ranjan</span>
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Rahul Ranjan</span>
                 </a>
                 
                 <!-- Mobile menu button -->
@@ -156,6 +156,7 @@
                 <div class="flex flex-col sm:flex-row justify-center sm:space-x-4 space-y-4 sm:space-y-0">
                     <a href="#contact" class="bg-primary hover:bg-blue-600 text-white px-8 py-3 rounded-full transition-colors">Contact Me</a>
                     <a href="#projects" class="bg-white hover:bg-gray-100 text-primary px-8 py-3 rounded-full transition-colors">View Work</a>
+                    <a href="#resume" class="bg-white hover:bg-gray-100 text-primary px-8 py-3 rounded-full transition-colors">Resume</a>
                 </div>
             </div>
             <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
@@ -213,6 +214,41 @@
                 </div>
             </div>
         </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="py-20 bg-gray-100 dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-8" data-aos="fade-up">Resume</h2>
+                <p class="text-center text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">View or download my CV instantly.</p>
+                <div class="flex justify-center gap-4" data-aos="fade-up" data-aos-delay="150">
+                    <a id="download-cv" href="Project Document/Rahul Ranjan.pdf" download class="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white px-8 py-3 rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-1">
+                        <i class="fas fa-download mr-2"></i>Download CV
+                    </a>
+                    <button id="view-cv" class="bg-white hover:bg-gray-100 text-primary px-8 py-3 rounded-full transition-colors border border-primary">
+                        <i class="fas fa-file-pdf mr-2"></i>View CV
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV Modal -->
+        <div id="cv-modal" class="fixed inset-0 z-[60] hidden">
+            <div class="absolute inset-0 bg-black/70"></div>
+            <div class="relative mx-auto my-10 w-[95%] md:w-4/5 h-[85vh] glass-effect rounded-xl overflow-hidden shadow-2xl">
+                <div class="flex items-center justify-between px-4 py-2 bg-white/70 dark:bg-gray-900/70 border-b border-gray-200 dark:border-gray-700">
+                    <h3 class="font-semibold">Rahul Ranjan - CV</h3>
+                    <div class="flex items-center gap-2">
+                        <a href="Project Document/Rahul Ranjan.pdf" download class="text-primary hover:text-blue-600 px-3 py-1 rounded">
+                            <i class="fas fa-download"></i>
+                        </a>
+                        <button id="cv-close" class="text-red-500 hover:text-red-600 px-3 py-1 rounded">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <iframe title="CV Viewer" src="Project Document/Rahul Ranjan.pdf#view=FitH" class="w-full h-[calc(85vh-44px)] bg-white"></iframe>
+            </div>
+        </div>
 
         <!-- Skills Section -->
         <section id="skills" class="py-20 bg-gray-100 dark:bg-gray-800 overflow-hidden">
@@ -436,73 +472,164 @@
         <!-- Projects Section -->
         <section id="projects" class="py-20 bg-white dark:bg-gray-900">
             <div class="container mx-auto px-4">
-                <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">My Projects</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Project Card 1 -->
-                    <div class="glass-effect rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-                        <img src="images/inventary-management-system.png" alt="Inventory Management System" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2">Inventory Management System</h3>
-                            <p class="text-gray-600 dark:text-gray-300 mb-4">A comprehensive inventory management system built with Python to track products, manage stock levels, and generate reports.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Python</span>
-                                <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Django</span>
-                                <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">SQLite</span>
+                <h2 class="text-4xl font-bold text-center mb-10" data-aos="fade-up">My Projects</h2>
+                <!-- Current Focus (moved above grid, visible on all screens) -->
+                <div class="glass-effect rounded-xl p-5 mb-8" data-aos="fade-up">
+                    <div class="flex gap-4 items-start">
+                        <div class="relative w-2 h-28 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-b from-secondary to-primary" style="height:0%" data-vertical-progress></div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-baseline justify-between mb-1">
+                                <h3 class="text-lg font-bold">Current Focus: CRM with WhatsApp Integration</h3>
+                                <span class="text-sm text-primary font-bold" data-vertical-progress-label>0%</span>
                             </div>
-                            <div class="flex justify-between">
-                                <a href="https://github.com/rranjanr/Inventory-Management-System" target="_blank" class="text-primary hover:text-blue-600 transition-colors">
-                                    <i class="fab fa-github mr-2"></i>View Code
-                                </a>
-                                <a href="#" class="text-primary hover:text-blue-600 transition-colors">
-                                    <i class="fas fa-external-link-alt mr-2"></i>Live Demo
-                                </a>
-                            </div>
+                            <ul class="text-[13px] text-gray-600 dark:text-gray-300 list-disc list-inside space-y-1">
+                                <li>CRUD operations done</li>
+                                <li>UI design mostly complete</li>
+                                <li>WhatsApp API integration pending</li>
+                                <li>Testing pending</li>
+                            </ul>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Project Card 2 -->
-                    <div class="glass-effect rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-                        <img src="images/ecommerce-website.png" alt="ShopOnline" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2">ShopOnline</h3>
-                            <p class="text-gray-600 dark:text-gray-300 mb-4">A web-based e-commerce platform with product management, shopping cart functionality, and user authentication.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">PHP</span>
-                                <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">MySQL</span>
-                                <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <!-- EduQuiz (Featured) -->
+                    <article class="project-card glass-effect rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="0" data-gallery>
+                        <div class="relative h-32 bg-gray-100 dark:bg-gray-800">
+                            <img class="w-full h-full object-cover" data-gallery-main src="Project Document/Eduquiz/userdashboard.jpg" alt="EduQuiz">
+                            <span class="absolute left-2 top-2 bg-gradient-to-r from-primary to-secondary text-white text-[10px] font-semibold px-2 py-0.5 rounded-full shadow">Featured</span>
+                            <button class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 dark:bg-gray-900/60 p-1.5 rounded-full shadow hover:scale-105 transition" data-gallery-prev>
+                                <i class="fas fa-chevron-left text-sm"></i>
+                            </button>
+                            <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 dark:bg-gray-900/60 p-1.5 rounded-full shadow hover:scale-105 transition" data-gallery-next>
+                                <i class="fas fa-chevron-right text-sm"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-1">EduQuiz</h3>
+                            <ul class="text-gray-600 dark:text-gray-300 mb-3 list-disc list-inside space-y-1 text-[13px]">
+                                <li>AI‑powered quiz generation</li>
+                                <li>Google OAuth login</li>
+                                <li>Admin analytics dashboard</li>
+                            </ul>
+                            <div class="flex flex-wrap gap-1.5 mb-3">
+                                <span class="bg-primary/10 text-primary px-1.5 py-0.5 rounded-full text-[11px]">Django</span>
+                                <span class="bg-primary/10 text-primary px-1.5 py-0.5 rounded-full text-[11px]">DRF</span>
+                                <span class="bg-primary/10 text-primary px-1.5 py-0.5 rounded-full text-[11px]">Tailwind</span>
+                                <span class="bg-primary/10 text-primary px-1.5 py-0.5 rounded-full text-[11px]">Alpine.js</span>
+                                <span class="bg-primary/10 text-primary px-1.5 py-0.5 rounded-full text-[11px]">OpenAI</span>
+                                <span class="bg-primary/10 text-primary px-1.5 py-0.5 rounded-full text-[11px]">Tesseract OCR</span>
                             </div>
-                            <div class="flex justify-between">
-                                <a href="https://github.com/rranjanr/ShopOnline" target="_blank" class="text-primary hover:text-blue-600 transition-colors">
-                                    <i class="fab fa-github mr-2"></i>View Code
-                                </a>
-                                <a href="#" class="text-primary hover:text-blue-600 transition-colors">
-                                    <i class="fas fa-external-link-alt mr-2"></i>Live Demo
-                                </a>
+                            <div class="grid grid-cols-4 gap-1" data-gallery-thumbs>
+                                <img class="h-10 w-full object-cover rounded cursor-pointer" src="Project Document/Eduquiz/userdashboard.jpg" alt="User Dashboard">
+                                <img class="h-10 w-full object-cover rounded cursor-pointer" src="Project Document/Eduquiz/pre_defined_quiz.jpg" alt="Predefined Quiz">
+                                <img class="h-10 w-full object-cover rounded cursor-pointer" src="Project Document/Eduquiz/login_page_with_google_auth.jpg" alt="Login">
+                                <img class="h-10 w-full object-cover rounded cursor-pointer" src="Project Document/Eduquiz/admin_dashboard.jpg" alt="Admin">
                             </div>
                         </div>
-                    </div>
+                    </article>
+                    <!-- Inventory Management System -->
+                    <article class="project-card glass-effect rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="50" data-gallery>
+                        <div class="relative h-40 bg-gray-100 dark:bg-gray-800">
+                            <img class="w-full h-full object-cover" data-gallery-main src="Project Document/Inventory_management_System/dashboard.jpg" alt="Inventory Management System">
+                            <button class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 dark:bg-gray-900/60 p-1.5 rounded-full shadow hover:scale-105 transition" data-gallery-prev>
+                                <i class="fas fa-chevron-left text-sm"></i>
+                            </button>
+                            <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 dark:bg-gray-900/60 p-1.5 rounded-full shadow hover:scale-105 transition" data-gallery-next>
+                                <i class="fas fa-chevron-right text-sm"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-1">Inventory Management System</h3>
+                            <ul class="text-gray-600 dark:text-gray-300 mb-3 list-disc list-inside space-y-1 text-[13px]">
+                                <li>Equipment CRUD, categories</li>
+                                <li>Checkout/Checkin, maintenance</li>
+                                <li>Role-based access, analytics</li>
+                            </ul>
+                            <div class="flex flex-wrap gap-1.5 mb-3">
+                                <span class="bg-primary/10 text-primary px-2 py-0.5 rounded-full text-xs">Django</span>
+                                <span class="bg-primary/10 text-primary px-2 py-0.5 rounded-full text-xs">Python</span>
+                                <span class="bg-primary/10 text-primary px-2 py-0.5 rounded-full text-xs">SQLite</span>
+                            </div>
+                            <div class="grid grid-cols-4 gap-1" data-gallery-thumbs>
+                                <img class="h-12 w-full object-cover rounded cursor-pointer" src="Project Document/Inventory_management_System/dashboard.jpg" alt="Dashboard">
+                                <img class="h-12 w-full object-cover rounded cursor-pointer" src="Project Document/Inventory_management_System/category_page.jpg" alt="Category">
+                                <img class="h-12 w-full object-cover rounded cursor-pointer" src="Project Document/Inventory_management_System/login_page.jpg" alt="Login">
+                                <img class="h-12 w-full object-cover rounded cursor-pointer" src="Project Document/Inventory_management_System/profile_page.jpg" alt="Profile">
+                            </div>
+                        </div>
+                    </article>
 
-                    <!-- Project Card 3 -->
-                    <div class="glass-effect rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-                        <img src="images/student-management-system.png" alt="SIMS" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2">Student Management System</h3>
-                            <p class="text-gray-600 dark:text-gray-300 mb-4">A student information management system with CRUD operations using PHP, HTML, CSS, and MySQL database.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">PHP</span>
-                                <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">MySQL</span>
-                                <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+                    <!-- E-commerce Website (Django) -->
+                    <article class="project-card glass-effect rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100" data-gallery>
+                        <div class="relative h-32 bg-gray-100 dark:bg-gray-800">
+                            <img class="w-full h-full object-cover" data-gallery-main src="Project Document/e-commerce Website/homepage.jpg" alt="E-commerce Website">
+                            <button class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 dark:bg-gray-900/60 p-1.5 rounded-full shadow hover:scale-105 transition" data-gallery-prev>
+                                <i class="fas fa-chevron-left text-sm"></i>
+                            </button>
+                            <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 dark:bg-gray-900/60 p-1.5 rounded-full shadow hover:scale-105 transition" data-gallery-next>
+                                <i class="fas fa-chevron-right text-sm"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-1">ShopOnline (E‑commerce)</h3>
+                            <ul class="text-gray-600 dark:text-gray-300 mb-3 list-disc list-inside space-y-1 text-[13px]">
+                                <li>Product catalog with filtering</li>
+                                <li>Cart, orders, and email updates</li>
+                                <li>Secure auth and sessions</li>
+                            </ul>
+                            <div class="flex flex-wrap gap-1.5 mb-3">
+                                <span class="bg-primary/10 text-primary px-1.5 py-0.5 rounded-full text-[11px]">Django</span>
+                                <span class="bg-primary/10 text-primary px-1.5 py-0.5 rounded-full text-[11px]">Tailwind CSS</span>
+                                <span class="bg-primary/10 text-primary px-1.5 py-0.5 rounded-full text-[11px]">JavaScript</span>
+                                <span class="bg-primary/10 text-primary px-1.5 py-0.5 rounded-full text-[11px]">SMTP Emails</span>
+                                <span class="bg-primary/10 text-primary px-1.5 py-0.5 rounded-full text-[11px]">SQLite</span>
                             </div>
-                            <div class="flex justify-between">
-                                <a href="https://github.com/rranjanr/SIMS" target="_blank" class="text-primary hover:text-blue-600 transition-colors">
-                                    <i class="fab fa-github mr-2"></i>View Code
-                                </a>
-                                <a href="#" class="text-primary hover:text-blue-600 transition-colors">
-                                    <i class="fas fa-external-link-alt mr-2"></i>Live Demo
-                                </a>
+                            <div class="grid grid-cols-4 gap-1" data-gallery-thumbs>
+                                <img class="h-10 w-full object-cover rounded cursor-pointer" src="Project Document/e-commerce Website/homepage.jpg" alt="Home">
+                                <img class="h-10 w-full object-cover rounded cursor-pointer" src="Project Document/e-commerce Website/products_page.jpg" alt="Products">
+                                <img class="h-10 w-full object-cover rounded cursor-pointer" src="Project Document/e-commerce Website/checkout_page.jpg" alt="Checkout">
+                                <img class="h-10 w-full object-cover rounded cursor-pointer" src="Project Document/e-commerce Website/admin_dashboard.jpg" alt="Admin">
                             </div>
                         </div>
-                    </div>
+                    </article>
+
+                    
+                    <!-- Cricbuzz LiveStats -->
+                    <article class="project-card glass-effect rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="200" data-gallery>
+                        <div class="relative h-32 bg-gray-100 dark:bg-gray-800">
+                            <img class="w-full h-full object-cover" data-gallery-main src="Project Document/CricBuzz-demo/Livematch.jpg" alt="Cricbuzz LiveStats">
+                            <button class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 dark:bg-gray-900/60 p-1.5 rounded-full shadow hover:scale-105 transition" data-gallery-prev>
+                                <i class="fas fa-chevron-left text-sm"></i>
+                            </button>
+                            <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 dark:bg-gray-900/60 p-1.5 rounded-full shadow hover:scale-105 transition" data-gallery-next>
+                                <i class="fas fa-chevron-right text-sm"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-1">Cricbuzz LiveStats</h3>
+                            <ul class="text-gray-600 dark:text-gray-300 mb-3 list-disc list-inside space-y-1 text-[13px]">
+                                <li>Live match updates</li>
+                                <li>Player analytics & charts</li>
+                                <li>SQL queries & CRUD</li>
+                            </ul>
+                            <div class="flex flex-wrap gap-1.5 mb-3">
+                                <span class="bg-primary/10 text-primary px-1.5 py-0.5 rounded-full text-[11px]">Python</span>
+                                <span class="bg-primary/10 text-primary px-1.5 py-0.5 rounded-full text-[11px]">Streamlit</span>
+                                <span class="bg-primary/10 text-primary px-1.5 py-0.5 rounded-full text-[11px]">SQLAlchemy</span>
+                                <span class="bg-primary/10 text-primary px-1.5 py-0.5 rounded-full text-[11px]">pandas</span>
+                                <span class="bg-primary/10 text-primary px-1.5 py-0.5 rounded-full text-[11px]">Requests</span>
+                            </div>
+                            <div class="grid grid-cols-4 gap-1" data-gallery-thumbs>
+                                <img class="h-10 w-full object-cover rounded cursor-pointer" src="Project Document/CricBuzz-demo/Livematch.jpg" alt="Live Match">
+                                <img class="h-10 w-full object-cover rounded cursor-pointer" src="Project Document/CricBuzz-demo/playerstats.jpg" alt="Player Stats">
+                                <img class="h-10 w-full object-cover rounded cursor-pointer" src="Project Document/CricBuzz-demo/CRUD_operation.jpg" alt="CRUD">
+                                <img class="h-10 w-full object-cover rounded cursor-pointer" src="Project Document/CricBuzz-demo/Query_execution.jpg" alt="Queries">
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>

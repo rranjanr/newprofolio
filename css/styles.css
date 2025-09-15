@@ -268,8 +268,9 @@ body {
     overflow: hidden;
 }
 
+/* Disable card lift on hover for calmer UI */
 .project-card:hover {
-    transform: translateY(-10px);
+    transform: none;
 }
 
 .project-card img {
@@ -277,7 +278,31 @@ body {
 }
 
 .project-card:hover img {
-    transform: scale(1.05);
+    transform: none;
+}
+
+/* Compact project cards */
+.project-card .p-4 {
+    padding: 0.9rem !important;
+}
+.project-card .h-32 {
+    height: 8rem !important;
+}
+.project-card h3 {
+    line-height: 1.15;
+}
+
+/* Vertical progress bar animation */
+[data-vertical-progress] {
+    transition: height 1.2s ease-out;
+}
+.project-card [data-gallery-thumbs] img {
+    opacity: 0.9;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.project-card [data-gallery-thumbs] img:hover {
+    transform: translateY(-2px);
+    opacity: 1;
 }
 
 .project-card .project-overlay {
@@ -481,6 +506,26 @@ body {
     .project-card:hover img {
         transform: none;
     }
+}
+
+/* Modal helpers */
+.modal-open {
+    overflow: hidden;
+}
+
+/* Progress shimmer for current work */
+[data-progress-bar] {
+    position: relative;
+}
+[data-progress-bar]::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+    animation: shimmer 1.8s infinite;
 }
 
 /* Dark Mode Enhancements */

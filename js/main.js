@@ -76,6 +76,18 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Typed.js effect for hero section
     animateHeroText();
+
+    // Resume modal wiring
+    initResumeModal();
+
+    // Current work progress
+    initCurrentWorkProgress();
+
+    // Project galleries
+    initProjectGalleries();
+
+    // Vertical current focus progress
+    initVerticalProgress();
 });
 
 // Snow Effect
@@ -390,18 +402,8 @@ function animateHeroText() {
     }
 }
 
-// Add 3D tilt effect to project cards but exclude form elements
-document.querySelectorAll('.glass-effect').forEach(card => {
-    // Skip form elements and their children
-    if (card.tagName === 'FORM' || card.tagName === 'INPUT' || 
-        card.tagName === 'TEXTAREA' || card.tagName === 'SELECT' ||
-        card.closest('form')) {
-        return;
-    }
-    
-    card.addEventListener('mousemove', handleTilt);
-    card.addEventListener('mouseleave', resetTilt);
-});
+// Disable 3D tilt on cards for a calmer UI
+// (Intentionally removed hover tilt listeners)
 
 function handleTilt(e) {
     // Ignore form elements
@@ -489,3 +491,110 @@ function initMobileMenu() {
         });
     }
 } 
+
+// Resume modal open/close
+function initResumeModal() {
+    const viewBtn = document.getElementById('view-cv');
+    const modal = document.getElementById('cv-modal');
+    const closeBtn = document.getElementById('cv-close');
+    if (!viewBtn || !modal) return;
+    const open = () => {
+        modal.classList.remove('hidden');
+        document.body.classList.add('modal-open');
+    };
+    const close = () => {
+        modal.classList.add('hidden');
+        document.body.classList.remove('modal-open');
+    };
+    viewBtn.addEventListener('click', open);
+    if (closeBtn) closeBtn.addEventListener('click', close);
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal || e.target.classList.contains('bg-black/70')) {
+            close();
+        }
+    });
+    document.addEventListener('keydown', (e) => {
+        if (!modal.classList.contains('hidden') && e.key === 'Escape') close();
+    });
+}
+
+// Animate current work progress bars with nice easing
+function initCurrentWorkProgress() {
+    const container = document.getElementById('current-work');
+    if (!container) return;
+    const items = container.querySelectorAll('[data-progress-bar]');
+    const labels = container.querySelectorAll('[data-progress-label]');
+    // Configure your current progress values here (free hosting friendly)
+    const targetPercents = [65, 45, 30];
+    // Observer to animate when visible
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                items.forEach((bar, idx) => {
+                    const target = targetPercents[idx] || 0;
+                    let current = 0;
+                    const label = labels[idx];
+                    const step = () => {
+                        current += Math.max(1, Math.round((target - current) * 0.08));
+                        if (current > target) current = target;
+                        bar.style.width = current + '%';
+                        if (label) label.textContent = current + '%';
+                        if (current < target) requestAnimationFrame(step);
+                    };
+                    // small stagger for nicer animation
+                    setTimeout(() => requestAnimationFrame(step), idx * 200);
+                });
+                observer.disconnect();
+            }
+        });
+    }, { threshold: 0.3 });
+    observer.observe(container);
+}
+
+// Vertical progress bar animation for current project focus
+function initVerticalProgress() {
+    const bar = document.querySelector('[data-vertical-progress]');
+    const label = document.querySelector('[data-vertical-progress-label]');
+    if (!bar || !label) return;
+    const target = 60; // CRM progress percent
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let current = 0;
+                const step = () => {
+                    current += Math.max(1, Math.round((target - current) * 0.08));
+                    if (current > target) current = target;
+                    bar.style.height = current + '%';
+                    label.textContent = current + '%';
+                    if (current < target) requestAnimationFrame(step);
+                };
+                requestAnimationFrame(step);
+                observer.disconnect();
+            }
+        });
+    }, { threshold: 0.3 });
+    observer.observe(bar);
+}
+
+// Simple gallery for project cards (thumbnails + next/prev)
+function initProjectGalleries() {
+    const galleries = document.querySelectorAll('[data-gallery]');
+    galleries.forEach(gallery => {
+        const mainImage = gallery.querySelector('[data-gallery-main]');
+        const thumbs = Array.from(gallery.querySelectorAll('[data-gallery-thumbs] img'));
+        const prevBtn = gallery.querySelector('[data-gallery-prev]');
+        const nextBtn = gallery.querySelector('[data-gallery-next]');
+        if (!mainImage || thumbs.length === 0) return;
+        let index = 0;
+        const sources = thumbs.map(img => img.getAttribute('src'));
+        const alts = thumbs.map(img => img.getAttribute('alt'));
+        const setIndex = (i) => {
+            index = (i + sources.length) % sources.length;
+            mainImage.src = sources[index];
+            if (alts[index]) mainImage.alt = alts[index];
+        };
+        thumbs.forEach((img, i) => img.addEventListener('click', () => setIndex(i)));
+        if (prevBtn) prevBtn.addEventListener('click', () => setIndex(index - 1));
+        if (nextBtn) nextBtn.addEventListener('click', () => setIndex(index + 1));
+    });
+}
