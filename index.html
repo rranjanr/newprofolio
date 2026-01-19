@@ -188,7 +188,7 @@
                             <a href="https://github.com/rranjanr" target="_blank" class="text-primary hover:text-blue-600 transition-colors transform hover:scale-110 hover:-translate-y-1 duration-300">
                                 <i class="fab fa-github text-3xl"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/r-ranzan-781898279/" target="_blank" class="text-primary hover:text-blue-500 transition-colors transform hover:scale-110 hover:-translate-y-1 duration-300">
+                            <a href="https://www.linkedin.com/in/rahul-ranjan-dev/" target="_blank" class="text-primary hover:text-blue-500 transition-colors transform hover:scale-110 hover:-translate-y-1 duration-300">
                                 <i class="fab fa-linkedin text-3xl"></i>
                             </a>
                             <a href="https://www.facebook.com/profile.php?id=100028254210950" target="_blank" class="text-primary hover:text-blue-700 transition-colors transform hover:scale-110 hover:-translate-y-1 duration-300">
@@ -776,5 +776,62 @@
     
     <!-- Custom Scripts -->
     <script src="js/main.js"></script>
+    
+    <!-- Google Analytics Event Tracking -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+      // ---- 1. Track all buttons clicks ----
+      const allButtons = document.querySelectorAll('button');
+      allButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const label = btn.innerText || btn.id || 'Button';
+          gtag('event', 'button_click', {
+            'event_category': 'engagement',
+            'event_label': label
+          });
+        });
+      });
+
+      // ---- 2. Track all links (downloads & external) ----
+      const allLinks = document.querySelectorAll('a[href]');
+      allLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          const href = link.getAttribute('href');
+          // Track only external links or downloadable files
+          const isDownload = link.hasAttribute('download');
+          const isExternal = href.startsWith('http') && !href.includes(location.hostname);
+          if(isDownload || isExternal) {
+            gtag('event', 'link_click', {
+              'event_category': 'engagement',
+              'event_label': href
+            });
+          }
+        });
+      });
+
+      // ---- 3. Track sections when scrolled into view ----
+      const sections = document.querySelectorAll('section[id]');
+      const trackedSections = new Set();
+
+      function checkSectionVisibility() {
+        sections.forEach(sec => {
+          const rect = sec.getBoundingClientRect();
+          if(rect.top < window.innerHeight && rect.bottom > 0 && !trackedSections.has(sec.id)) {
+            trackedSections.add(sec.id);
+            gtag('event', 'section_view', {
+              'event_category': 'engagement',
+              'event_label': sec.id
+            });
+          }
+        });
+      }
+
+      window.addEventListener('scroll', checkSectionVisibility);
+      window.addEventListener('resize', checkSectionVisibility);
+      checkSectionVisibility(); // run once on load
+
+    });
+    </script>
 </body>
 </html> 
