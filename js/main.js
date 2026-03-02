@@ -8,8 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
         mirror: false
     });
     
-    // Set current year in footer
-    document.getElementById('current-year').textContent = new Date().getFullYear();
+    // Set current year in footer (if enabled)
+    const yearEl = document.getElementById('current-year');
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
     
     // Initialize mobile menu
     initMobileMenu();
@@ -93,6 +96,11 @@ document.addEventListener('DOMContentLoaded', function() {
 // Snow Effect
 function initSnowEffect() {
     const snowContainer = document.getElementById('snow-container');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (window.innerWidth < 768 || prefersReducedMotion) {
+        snowContainer.style.display = 'none';
+        return;
+    }
     const isMobile = window.innerWidth < 768;
     const snowflakeCount = isMobile ? 20 : 50; // Fewer snowflakes on mobile
     
