@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
     handleNavActiveState();
     
     // Skill bars animation
-    animateSkillBars();
+    animateSkillBars([65]);
     
     // Typed.js effect for hero section
     animateHeroText();
@@ -533,7 +533,7 @@ function initCurrentWorkProgress() {
     const items = container.querySelectorAll('[data-progress-bar]');
     const labels = container.querySelectorAll('[data-progress-label]');
     // Configure your current progress values here (free hosting friendly)
-    const targetPercents = [65, 45, 30];
+    const targetPercents = [65];
     // Observer to animate when visible
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
