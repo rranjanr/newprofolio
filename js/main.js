@@ -91,6 +91,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Vertical current focus progress
     initVerticalProgress();
+
+    // Stat counter animation
+    initStatCounters();
 });
 
 // Snow Effect
@@ -582,6 +585,32 @@ function initVerticalProgress() {
         });
     }, { threshold: 0.3 });
     observer.observe(bar);
+}
+
+// Animate stat counters with ease-out curve on scroll into view
+function initStatCounters() {
+    const counters = document.querySelectorAll('[data-stat-target]');
+    if (!counters.length) return;
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            const el = entry.target;
+            const target = parseInt(el.getAttribute('data-stat-target'), 10);
+            const duration = 900;
+            const start = performance.now();
+            const step = (now) => {
+                const elapsed = now - start;
+                const progress = Math.min(elapsed / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                el.textContent = Math.round(eased * target) + '+';
+                if (progress < 1) requestAnimationFrame(step);
+                else el.textContent = target + '+';
+            };
+            requestAnimationFrame(step);
+            observer.unobserve(el);
+        });
+    }, { threshold: 0.4 });
+    counters.forEach(c => observer.observe(c));
 }
 
 // Simple gallery for project cards (thumbnails + next/prev)
