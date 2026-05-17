@@ -37,7 +37,11 @@
 }
 
 /* ─── Base ────────────────────────────────────────────────── */
-html { scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+}
 
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -46,6 +50,8 @@ body {
     background: var(--light);
     color: var(--text-1);
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.6;
@@ -180,8 +186,8 @@ header {
 }
 
 /* Keep in DOM so CSS transition can play; override Tailwind display:none */
-#mobile-menu.hidden { display: block !important; transform: translateX(100%); opacity: 0; pointer-events: none; }
-#mobile-menu:not(.hidden) { transform: translateX(0); opacity: 1; pointer-events: auto; }
+#mobile-menu.hidden { display: block !important; transform: translateX(100%); opacity: 0; pointer-events: none; visibility: hidden; }
+#mobile-menu:not(.hidden) { transform: translateX(0); opacity: 1; pointer-events: auto; visibility: visible; }
 
 /* Always hide on desktop regardless of JS state */
 @media (min-width: 768px) {
