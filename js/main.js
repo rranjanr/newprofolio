@@ -1,12 +1,37 @@
+// ── Ambient background layer injection ──────────────────────
+(function () {
+    function injectBg() {
+        if (document.getElementById('bg-canvas')) return;
+        var canvas = document.createElement('div');
+        canvas.id = 'bg-canvas';
+        canvas.innerHTML =
+            '<div class="bg-blob bg-blob-1"></div>' +
+            '<div class="bg-blob bg-blob-2"></div>' +
+            '<div class="bg-blob bg-blob-3"></div>' +
+            '<div class="bg-blob bg-blob-4"></div>' +
+            '<div class="bg-ring bg-ring-1"></div>' +
+            '<div class="bg-ring bg-ring-2"></div>' +
+            '<div class="bg-ring bg-ring-3"></div>';
+        var grid = document.createElement('div');
+        grid.id = 'bg-grid';
+        document.body.insertBefore(grid, document.body.firstChild);
+        document.body.insertBefore(canvas, document.body.firstChild);
+    }
+    if (document.readyState !== 'loading') { injectBg(); }
+    else { document.addEventListener('DOMContentLoaded', injectBg); }
+})();
+
 // Initialize on DOM Load
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize AOS (Animate On Scroll)
-    AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: true,
-        mirror: false
-    });
+    // Initialize AOS (Animate On Scroll)  only if library is loaded
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    }
     
     // Set current year in footer (if enabled)
     const yearEl = document.getElementById('current-year');
@@ -94,11 +119,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Stat counter animation
     initStatCounters();
+
+    // Reading progress bar (blog posts)
+    initReadProgress();
+
+    // Share buttons copy-link
+    initShareButtons();
 });
 
 // Snow Effect
 function initSnowEffect() {
     const snowContainer = document.getElementById('snow-container');
+    if (!snowContainer) return;
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (window.innerWidth < 768 || prefersReducedMotion) {
         snowContainer.style.display = 'none';
@@ -611,6 +643,34 @@ function initStatCounters() {
         });
     }, { threshold: 0.4 });
     counters.forEach(c => observer.observe(c));
+}
+
+// Reading progress bar for article pages
+function initReadProgress() {
+    const bar = document.getElementById('readProgress');
+    if (!bar) return;
+    const update = () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        bar.style.width = docHeight > 0 ? (scrollTop / docHeight * 100) + '%' : '0%';
+    };
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+}
+
+// Copy-link share buttons
+function initShareButtons() {
+    document.querySelectorAll('[data-share-copy]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                const orig = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                btn.style.background = '#D1FAE5';
+                btn.style.color = '#065F46';
+                setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; btn.style.color = ''; }, 2000);
+            });
+        });
+    });
 }
 
 // Simple gallery for project cards (thumbnails + next/prev)

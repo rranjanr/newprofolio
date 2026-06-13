@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Analytics 4 Setup Guide for Nepal Businesses (2026)</title>
+  <meta name="description" content="Step-by-step GA4 setup for Nepal business websites. Covers property setup, event tracking, conversions, and reading your data. No coding knowledge needed.">
+  <link rel="canonical" href="https://www.rahulranjan.com.np/blog/google-analytics-4-guide-nepal.html">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Rahul Ranjan">
+  <meta property="og:title" content="Google Analytics 4 Setup Guide for Nepal Businesses (2026)">
+  <meta property="og:description" content="Step-by-step GA4 setup for Nepal business websites - property setup, events, conversions, and reading your data.">
+  <meta property="og:url" content="https://www.rahulranjan.com.np/blog/google-analytics-4-guide-nepal.html">
+  <meta property="og:image" content="https://www.rahulranjan.com.np/images/profilepic.jpg">
+  <meta property="og:type" content="article">
+  <meta name="keywords" content="Google Analytics 4 Nepal, GA4 Nepal, analytics setup Nepal, Nepal website tracking, GA4 tutorial Nepal, website analytics Nepal">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Google Analytics 4 Setup Guide for Nepal Businesses (2026)">
+  <meta name="twitter:description" content="Step-by-step GA4 setup: property, events, conversions, and reading your Nepal website data - no coding knowledge required.">
+  <meta name="twitter:image" content="https://www.rahulranjan.com.np/images/profilepic.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="/images/profile_image.png" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Google Analytics 4 Setup Guide for Nepal Businesses (2026)",
+    "description": "Step-by-step GA4 setup for Nepal business websites. Covers property setup, event tracking, conversions, and reading your data.",
+    "datePublished": "2026-06-13",
+    "dateModified": "2026-06-13",
+    "author": {"@id": "https://www.rahulranjan.com.np/#rahul-ranjan"},
+    "publisher": {"@id": "https://www.rahulranjan.com.np/#rahul-ranjan"},
+    "url": "https://www.rahulranjan.com.np/blog/google-analytics-4-guide-nepal.html",
+    "image": "https://www.rahulranjan.com.np/images/profilepic.jpg",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rahulranjan.com.np/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.rahulranjan.com.np/blog/"},
+        {"@type": "ListItem", "position": 3, "name": "GA4 Guide Nepal", "item": "https://www.rahulranjan.com.np/blog/google-analytics-4-guide-nepal.html"}
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Set Up Google Analytics 4 for a Nepal Business Website",
+    "description": "Step-by-step guide to setting up GA4 for a Nepal business, including property creation, tracking code installation, and conversion configuration.",
+    "step": [
+      {"@type": "HowToStep", "name": "Create a GA4 Property", "text": "Go to analytics.google.com, sign in with your Google account, click Admin → Create Property. Select 'Web' as the platform and enter your Nepal business website URL."},
+      {"@type": "HowToStep", "name": "Install the tracking code", "text": "Copy the GA4 measurement ID (G-XXXXXXXXXX) and add the gtag.js script to the <head> section of every page on your website."},
+      {"@type": "HowToStep", "name": "Verify data is flowing", "text": "Open your website and then check GA4 Realtime report - you should see 1 active user (you). If nothing appears, check the tracking code is on all pages and not blocked by browser extensions."},
+      {"@type": "HowToStep", "name": "Mark key events as conversions", "text": "In GA4 Admin → Conversions, toggle 'form_submit', 'phone_call_click', or 'purchase' as conversion events. These will be highlighted in reports as business-critical actions."}
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#2563EB',secondary:'#059669',dark:'#0F172A',light:'#F8FAFC'},fontFamily:{sans:['Inter','sans-serif']}}}}</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHSBCEGMD4"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XHSBCEGMD4');</script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="A3fUj9Ix+DWtRvNRZZbfZA" async></script>
+</head>
+<body class="bg-light text-dark min-h-screen flex flex-col">
+<div class="read-progress" id="readProgress"></div>
+
+<header class="sticky top-0 z-50 bg-white/95 shadow-lg backdrop-blur-sm">
+  <div class="container mx-auto px-4">
+    <nav class="py-3 flex justify-between items-center" aria-label="Main navigation">
+      <a href="/" class="text-2xl font-bold flex items-center">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white mr-3"><i class="fas fa-code"></i></div>
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Rahul Ranjan</span>
+      </a>
+      <button id="mobile-menu-button" aria-label="Toggle navigation menu" class="md:hidden focus:outline-none bg-primary/10 p-2.5 rounded-lg hover:bg-primary/20 transition-colors">
+        <i class="fas fa-bars text-xl text-primary"></i>
+      </button>
+      <div class="hidden md:flex items-center gap-1">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/#about" class="nav-link">About</a>
+        <a href="/#projects" class="nav-link">Projects</a>
+        <a href="/services/" class="nav-link">Services</a>
+        <a href="/blog/" class="nav-link">Blog</a>
+        <a href="/#contact" class="nav-cta ml-3"><i class="fas fa-paper-plane text-xs"></i> Hire Me</a>
+      </div>
+    </nav>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden">
+    <div class="px-4 py-4 space-y-1">
+      <a href="/" class="nav-link">Home</a>
+      <a href="/#about" class="nav-link">About</a>
+      <a href="/#projects" class="nav-link">Projects</a>
+      <a href="/services/" class="nav-link">Services</a>
+      <a href="/blog/" class="nav-link">Blog</a>
+      <div class="pt-3 pb-1"><a href="/#contact" class="nav-cta" style="justify-content:center;width:100%;display:flex;"><i class="fas fa-paper-plane text-xs"></i> Hire Me</a></div>
+    </div>
+  </div>
+</header>
+
+<main class="flex-grow">
+  <section class="py-12 bg-gradient-to-br from-blue-50 via-white to-emerald-50">
+    <div class="container mx-auto px-4 max-w-3xl">
+      <nav aria-label="Breadcrumb" class="mb-6">
+        <ol class="flex flex-wrap gap-2 text-sm text-gray-500">
+          <li><a href="/" class="hover:text-primary">Home</a></li><li>/</li>
+          <li><a href="/blog/" class="hover:text-primary">Blog</a></li><li>/</li>
+          <li class="text-primary font-medium">GA4 Guide Nepal</li>
+        </ol>
+      </nav>
+      <span class="inline-block bg-orange-100 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">Analytics</span>
+      <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">Google Analytics 4 Setup Guide for Nepal Businesses</h1>
+      <div class="article-meta-row">
+        <span><i class="fas fa-user-circle mr-1"></i> <a href="/">Rahul Ranjan</a></span>
+        <span class="article-meta-sep">·</span>
+        <span><i class="fas fa-calendar-alt mr-1"></i> June 13, 2026</span>
+        <span class="article-meta-sep">·</span>
+        <span><i class="fas fa-clock mr-1"></i> 8 min read</span>
+        <span class="article-meta-sep">·</span>
+        <a href="/blog/"><i class="fas fa-arrow-left mr-1"></i> Back to Blog</a>
+      </div>
+      <p class="text-lg text-gray-700 leading-relaxed">Most Nepal business websites have Google Analytics installed incorrectly - or not at all. Without accurate data, you're running your marketing blindfolded. This step-by-step guide shows you how to set up GA4 properly, track the right events, and read your data to make better decisions.</p>
+    </div>
+  </section>
+
+  <article class="py-12">
+    <div class="container mx-auto px-4 max-w-3xl">
+      <div class="prose-article">
+
+        <h2 class="text-2xl font-bold mt-10 mb-4" style="color:var(--text-1)">Why GA4 Replaced Universal Analytics (And Why You Need It Now)</h2>
+        <p class="text-gray-700 mb-4 leading-relaxed">Google retired Universal Analytics (UA) in July 2024. If your Nepal business website is still trying to use the old UA tracking, it stopped collecting data. GA4 is the mandatory replacement.</p>
+        <p class="text-gray-700 mb-4 leading-relaxed"><strong>What's different about GA4:</strong></p>
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+          <li><strong>Event-based model</strong>  Every user action (page view, scroll, click, form submit) is an "event." This is more flexible than UA's session/pageview model.</li>
+          <li><strong>Cross-device tracking</strong>  GA4 can track users across mobile and desktop sessions more reliably than UA.</li>
+          <li><strong>Better privacy compliance</strong>  GA4 is designed for a cookieless future with Google's Consent Mode.</li>
+          <li><strong>Machine learning insights</strong>  GA4 predicts which users are likely to purchase or churn, based on your data patterns.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4" style="color:var(--text-1)">Step 1: Create a GA4 Property</h2>
+        <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-3">
+          <li>Go to <strong>analytics.google.com</strong> and sign in with your Google account (create one if needed).</li>
+          <li>Click <strong>Admin</strong> (gear icon, bottom left).</li>
+          <li>Click <strong>Create Property</strong>. Enter your property name (e.g., "YourBusiness.com.np").</li>
+          <li>Select your business category, size, and intended use. Click <strong>Next</strong>.</li>
+          <li>Select <strong>Web</strong> as your platform. Enter your website URL (e.g., <code>https://yourbusiness.com.np</code>).</li>
+          <li>Click <strong>Create Stream</strong>. You'll see your <strong>Measurement ID</strong> (format: G-XXXXXXXXXX). Copy this.</li>
+        </ol>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4" style="color:var(--text-1)">Step 2: Install the Tracking Code on Your Website</h2>
+        <p class="text-gray-700 mb-4 leading-relaxed">Add this code to the <code>&lt;head&gt;</code> section of every page on your website. Replace <code>G-XXXXXXXXXX</code> with your actual Measurement ID:</p>
+        <div class="p-4 bg-gray-900 text-gray-100 rounded-xl text-sm font-mono overflow-x-auto mb-6">
+          <pre><code>&lt;!-- Google Analytics 4 --&gt;
+&lt;script async
+  src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"&gt;
+&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+&lt;/script&gt;</code></pre>
+        </div>
+        <p class="text-gray-700 mb-6 leading-relaxed"><strong>Using WordPress?</strong> Install the "Site Kit by Google" plugin - it handles GA4 installation without touching code. <strong>Using Wix or Squarespace?</strong> Each platform has a dedicated GA4 integration in settings. <strong>Static HTML site?</strong> Add the code directly to every HTML file's <code>&lt;head&gt;</code> section.</p>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4" style="color:var(--text-1)">Step 3: Verify Data is Flowing</h2>
+        <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
+          <li>Open your website in a browser.</li>
+          <li>In GA4, go to <strong>Reports → Realtime</strong>.</li>
+          <li>You should see "1 user in last 30 minutes"  that's you.</li>
+          <li>If nothing appears: check the code is on all pages, verify your Measurement ID is correct, and disable ad-blockers for testing.</li>
+        </ol>
+        <p class="text-gray-700 mb-6 leading-relaxed">Wait 24–48 hours before judging whether data is accumulating. GA4's reports have a data processing delay that's normal.</p>
+
+        <div class="my-8 p-5 bg-primary/5 border-l-4 border-primary rounded-lg">
+          <p class="font-semibold mb-2" style="color:var(--text-1)">Want GA4 set up properly with custom event tracking?</p>
+          <p class="text-gray-600 text-sm mb-3">I set up GA4 with custom events, conversion tracking, and Search Console integration for Nepal businesses. Takes 1–2 days to implement correctly.</p>
+          <a href="/#contact" class="btn-primary">I can do this for you</a>
+        </div>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4" style="color:var(--text-1)">Key Events to Track for Nepal Businesses</h2>
+        <p class="text-gray-700 mb-4 leading-relaxed">GA4 tracks some events automatically (page views, scrolls, clicks, file downloads). For Nepal businesses, these additional events matter most:</p>
+        <div class="space-y-3 mb-6">
+          <div class="p-4 border border-gray-200 rounded-xl">
+            <h3 class="font-bold text-sm">Contact form submission</h3>
+            <p class="text-gray-600 text-xs mt-1">The most important event for service businesses. Fire a GA4 event when someone submits your inquiry form. Without this, you can't measure your website's lead generation.</p>
+            <div class="mt-2 p-2 bg-gray-50 rounded text-xs font-mono">gtag('event', 'form_submit', &#123;form_name: 'contact'&#125;);</div>
+          </div>
+          <div class="p-4 border border-gray-200 rounded-xl">
+            <h3 class="font-bold text-sm">Phone number click</h3>
+            <p class="text-gray-600 text-xs mt-1">Track when mobile users tap your phone number. On a Nepal website where 80% of traffic is mobile, this is often your highest-converting action.</p>
+          </div>
+          <div class="p-4 border border-gray-200 rounded-xl">
+            <h3 class="font-bold text-sm">WhatsApp / Viber button click</h3>
+            <p class="text-gray-600 text-xs mt-1">If you have WhatsApp or Viber contact buttons (common for Nepal businesses), track clicks. This tells you which communication channel your customers prefer.</p>
+          </div>
+          <div class="p-4 border border-gray-200 rounded-xl">
+            <h3 class="font-bold text-sm">Product/service page views</h3>
+            <p class="text-gray-600 text-xs mt-1">Which services get the most views? This tells you where to invest in content and where to improve conversion copy.</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4" style="color:var(--text-1)">Step 4: Setting Up Conversions</h2>
+        <p class="text-gray-700 mb-4 leading-relaxed">A "conversion" in GA4 is an event you mark as business-critical. Setting up conversions correctly lets you measure your ROI from SEO, ads, and other channels.</p>
+        <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
+          <li>In GA4, go to <strong>Admin → Conversions</strong>.</li>
+          <li>Click <strong>New Conversion Event</strong>.</li>
+          <li>Enter the event name you want to mark as a conversion (e.g., <code>form_submit</code>, <code>phone_call_click</code>).</li>
+          <li>Click <strong>Save</strong>. It takes up to 24 hours for conversions to appear in reports.</li>
+        </ol>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4" style="color:var(--text-1)">Reading Your GA4 Dashboard: What the Numbers Mean</h2>
+        <div class="overflow-x-auto mb-6">
+          <table class="w-full text-sm border-collapse">
+            <thead><tr class="bg-primary text-white"><th class="p-3 text-left rounded-tl-lg">Metric</th><th class="p-3 text-left">What It Means</th><th class="p-3 text-left rounded-tr-lg">Good Benchmark</th></tr></thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr class="bg-white"><td class="p-3 font-medium">Active users</td><td class="p-3">Unique visitors (30-day period)</td><td class="p-3">Depends on your stage</td></tr>
+              <tr class="bg-gray-50"><td class="p-3 font-medium">Sessions</td><td class="p-3">Total visits (1 user can have multiple)</td><td class="p-3">Higher than users</td></tr>
+              <tr class="bg-white"><td class="p-3 font-medium">Engagement rate</td><td class="p-3">% of sessions lasting 10s+ or with conversion</td><td class="p-3">&gt;50% is good</td></tr>
+              <tr class="bg-gray-50"><td class="p-3 font-medium">Bounce rate</td><td class="p-3">Sessions with no engagement (not labeled in GA4 as in UA)</td><td class="p-3">Lower is better</td></tr>
+              <tr class="bg-white"><td class="p-3 font-medium">Conversions</td><td class="p-3">Times your key events fired</td><td class="p-3">Track trend over time</td></tr>
+              <tr class="bg-gray-50"><td class="p-3 font-medium">Organic search traffic</td><td class="p-3">Visitors from Google (not paid ads)</td><td class="p-3">Growing month-over-month</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4" style="color:var(--text-1)">Common GA4 Mistakes Nepal Websites Make</h2>
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-3">
+          <li><strong>Tracking code not on every page.</strong> If GA4 code is missing from the contact page or thank-you page, your conversion data will be wrong.</li>
+          <li><strong>Internal traffic inflating the numbers.</strong> Every time you visit your own site, it counts as a session. Filter out your IP address in GA4 Admin → Data Streams → More Tagging Settings → Define Internal Traffic.</li>
+          <li><strong>Not linking to Google Search Console.</strong> GA4 + Search Console integration shows which Google search queries bring visitors. This is essential for SEO planning. Link in GA4 Admin → Property Settings → Search Console Links.</li>
+          <li><strong>Not setting up conversion events.</strong> Without conversions, you can't measure which traffic sources actually generate leads - you're just counting visits.</li>
+          <li><strong>Trusting the Realtime report for decisions.</strong> Realtime is for verification, not decisions. Use Reports → Acquisition for traffic analysis and Reports → Engagement for behavior analysis.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4" style="color:var(--text-1)">Bonus: Connect Google Search Console</h2>
+        <p class="text-gray-700 mb-4 leading-relaxed">Google Search Console shows you what search queries bring people to your site, which pages rank for which keywords, and which pages have crawl errors. Connecting it to GA4 gives you the complete picture.</p>
+        <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
+          <li>Go to Google Search Console → Add Property → enter your Nepal website URL.</li>
+          <li>Verify ownership (easiest method: add the HTML meta tag to your homepage).</li>
+          <li>In GA4 Admin → Property Settings → Search Console Links → Link.</li>
+          <li>Data from Search Console appears in GA4 Reports → Acquisition → Search Console.</li>
+        </ol>
+
+      </div>
+
+      <div class="mt-12 p-8 bg-gradient-to-br from-blue-50 to-emerald-50 rounded-2xl text-center border border-primary/10">
+        <h2 class="text-2xl font-bold mb-3">Want GA4 set up properly for your Nepal business?</h2>
+        <p class="text-gray-600 mb-6">I set up GA4 with custom event tracking, conversion configuration, and Search Console integration. You get actionable data - not just a tracking pixel.</p>
+        <a href="/#contact" class="btn-primary">Get GA4 set up right</a>
+      </div>
+
+      <div class="share-row">
+        <span class="share-label"><i class="fas fa-share-alt mr-1"></i> Share:</span>
+        <a href="https://twitter.com/intent/tweet?url=https://www.rahulranjan.com.np/blog/google-analytics-4-guide-nepal.html&text=Google+Analytics+4+Setup+Guide+for+Nepal+Businesses+(2026)" target="_blank" rel="noopener" class="share-btn x-twitter"><i class="fab fa-x-twitter"></i> X / Twitter</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.rahulranjan.com.np/blog/google-analytics-4-guide-nepal.html" target="_blank" rel="noopener" class="share-btn linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+        <button class="share-btn copy-link" data-share-copy><i class="fas fa-link"></i> Copy Link</button>
+      </div>
+      <div class="author-bio-card">
+        <img src="/images/profilepic.jpg" alt="Rahul Ranjan" class="author-bio-img" loading="lazy">
+        <div>
+          <p class="author-bio-name">Rahul Ranjan</p>
+          <p class="author-bio-role">SEO Expert & Full Stack Developer · Biratnagar, Nepal</p>
+          <p class="author-bio-text">Director of Marketing at Dragon Insurance (US). I set up GA4 with custom event tracking and conversion measurement for Nepal businesses - and I can fix the technical issues GA4 reveals.</p>
+          <div class="author-bio-links">
+            <a href="https://www.linkedin.com/in/rahul-ranjan-dev/" target="_blank" rel="noopener noreferrer" class="author-bio-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/rranjanr" target="_blank" rel="noopener noreferrer" class="author-bio-link"><i class="fab fa-github"></i> GitHub</a>
+            <a href="/#contact" class="author-bio-link"><i class="fas fa-paper-plane"></i> Hire Me</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12">
+        <h3 class="text-xl font-bold mb-6">Related Articles</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <a href="/blog/technical-seo-checklist-nepal.html" class="glass-effect p-4 rounded-xl hover:shadow-md transition-shadow">
+            <span class="text-xs text-emerald-600 font-semibold">SEO</span>
+            <p class="font-semibold mt-1 text-sm">Technical SEO Checklist for Nepal Businesses</p>
+          </a>
+          <a href="/services/seo-services-nepal.html" class="glass-effect p-4 rounded-xl hover:shadow-md transition-shadow">
+            <span class="text-xs text-primary font-semibold">Service</span>
+            <p class="font-semibold mt-1 text-sm">SEO Services Nepal - Rahul Ranjan</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="bg-dark text-white py-8">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4">Rahul Ranjan</h3>
+        <p class="text-gray-400 mb-4">Full Stack Developer &amp; SEO Expert. Biratnagar, Nepal.</p>
+        <a href="https://github.com/rranjanr" target="_blank" rel="me noopener noreferrer" class="text-gray-400 hover:text-white text-sm"><i class="fab fa-github mr-2"></i>github.com/rranjanr</a>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Pages</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
+          <li><a href="/services/" class="hover:text-primary transition-colors">Services</a></li>
+          <li><a href="/blog/" class="hover:text-primary transition-colors">Blog</a></li>
+          <li><a href="/web-developer-biratnagar.html" class="hover:text-primary transition-colors">Web Developer Biratnagar</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contact</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><i class="fas fa-envelope mr-2"></i><a href="mailto:rahul.ranjan98153@gmail.com" class="hover:text-primary transition-colors">rahul.ranjan98153@gmail.com</a></li>
+          <li><i class="fas fa-phone mr-2"></i><a href="tel:+9779805360131" class="hover:text-primary transition-colors">+977 9805360131</a></li>
+          <li><i class="fas fa-map-marker-alt mr-2"></i> Biratnagar, Nepal</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+      <p>&copy; 2026 Rahul Ranjan - Full Stack Developer &amp; SEO Expert, Biratnagar, Nepal.</p>
+    </div>
+  </div>
+</footer>
+<a href="https://wa.me/9779805360131?text=Hi%20Rahul%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+  <span>Chat on WhatsApp</span>
+</a>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+# Rahul Ranjan  Full Stack Developer & SEO Expert
+
+> Full Stack Developer and SEO Expert based in Biratnagar, Nepal. React, Next.js, Node.js, Django, PostgreSQL. Director of Marketing at Dragon Insurance (US). Available for freelance web development and SEO projects globally.
+
+## About Rahul Ranjan
+
+Rahul Ranjan is a full stack Developer and SEO expert based in Biratnagar, Koshi Province, Nepal. He builds production-grade websites, web applications, and SaaS platforms for businesses across Nepal and globally.
+
+He currently serves as Director of Marketing at Dragon Insurance  a US-based insurance company  managing all digital marketing, SEO strategy, and technical web implementation remotely. This represents the caliber of professional work Rahul delivers: international-standard output from Biratnagar, Nepal.
+
+**Technical Skills:**
+- Frontend: React.js, Next.js, TypeScript, Tailwind CSS, HTML/CSS
+- Backend: Node.js, Express.js, Django, Python, REST API design
+- Database: PostgreSQL, MySQL, MongoDB, Redis
+- DevOps: Docker, GitHub Actions, CI/CD pipelines, Linux server management
+- SEO: Technical SEO, Core Web Vitals (LCP/CLS/INP), Schema markup (JSON-LD), Google Search Console, Google Analytics 4, Ahrefs
+
+**Nepal-specific expertise:**
+- eSewa payment gateway integration (including server-to-server verification)
+- Khalti payment gateway integration
+- Nepal Telecom / Ncell SMS API
+- KYC compliance for Nepal SaaS products
+- Local keyword research for Nepal market
+
+## Projects
+
+### Bulk SMS SaaS Platform
+Production multi-tenant SaaS experience from a bulk SMS platform in Nepal.
+- Architecture: React (frontend), Node.js + Express (API), PostgreSQL with RLS (database), Redis + BullMQ (queue), PM2 (process manager)
+- Skills: Multi-tenant data isolation with PostgreSQL RLS, eSewa payment integration, KYC onboarding flow, REST API documentation in PHP/Python/Node.js/cURL, async job queue processing, admin portal
+
+### EduQuiz AI Quiz Platform
+AI-powered quiz generation platform built with React and Django.
+- Features: Dynamic question generation, scoring, progress tracking, multiple quiz categories
+
+### Website Scanner Tool
+Python-based tool for automated SEO auditing of Nepal business websites.
+- GitHub: https://github.com/rranjanr/website_scanner
+- Audits: crawlability, canonical tags, schema markup, page speed, mobile responsiveness
+
+### CI/CD Pipeline
+GitHub Actions-based CI/CD pipeline for Node.js projects.
+- GitHub: https://github.com/rranjanr/CIpipeline
+
+## Services
+
+### Web Development Services Nepal
+Custom websites and web applications for Nepal businesses.
+- Basic business website: NPR 15,000–40,000 (1–2 weeks)
+- E-commerce website: NPR 60,000–1,50,000 (3–6 weeks)
+- Custom web app / SaaS MVP: NPR 2,00,000+ (2–4 months)
+- URL: https://www.rahulranjan.com.np/services/web-development-nepal.html
+
+### SEO Services Nepal
+Technical SEO audit and implementation for Nepal businesses.
+- Technical SEO audit: NPR 15,000–30,000
+- Audit + implementation: NPR 30,000–80,000
+- Monthly retainer: NPR 20,000–50,000/month
+- URL: https://www.rahulranjan.com.np/services/seo-services-nepal.html
+
+### React.js & Next.js Development Nepal
+React and Next.js applications for Nepal startups and businesses.
+- Basic Next.js website: NPR 30,000–70,000
+- React dashboard: NPR 60,000–1,50,000
+- Full stack React + API: NPR 1,50,000+
+- URL: https://www.rahulranjan.com.np/services/react-development-nepal.html
+
+### SaaS Development Nepal
+Multi-tenant SaaS platforms from MVP to production.
+- SaaS MVP: NPR 2,00,000–4,00,000
+- Full-featured SaaS: NPR 5,00,000–12,00,000
+- URL: https://www.rahulranjan.com.np/services/saas-development-nepal.html
+
+## Blog Content
+
+### Web Development Cost in Nepal (2026)
+Comprehensive pricing guide for websites in Nepal. Covers basic sites (NPR 15K–50K), e-commerce (NPR 50K–2L), and SaaS (NPR 2L+). Includes freelancer vs agency comparison and Rahul's actual rates.
+URL: https://www.rahulranjan.com.np/blog/cost-of-web-development-nepal.html
+
+### How to Hire a Web Developer in Nepal (2026)
+Guide to finding and vetting web developers in Nepal. Includes 10 questions to ask, red flags to avoid, portfolio review checklist, and communication best practices.
+URL: https://www.rahulranjan.com.np/blog/how-to-hire-web-developer-nepal.html
+
+### Next.js vs React for Nepal Startups (2026)
+Technical comparison of Next.js and React for Nepal businesses. Covers SEO implications, performance benchmarks on Nepal's 4G network, and decision framework for choosing between the two.
+URL: https://www.rahulranjan.com.np/blog/nextjs-vs-react-nepal-startups.html
+
+### Technical SEO Checklist for Nepal Businesses (2026)
+25-point technical SEO checklist for Nepal business websites. Covers crawlability, Core Web Vitals, mobile optimization, schema markup, and on-page signals.
+URL: https://www.rahulranjan.com.np/blog/technical-seo-checklist-nepal.html
+
+### MERN Stack Guide 2026
+Analysis of MERN stack (MongoDB, Express, React, Node.js) in 2026. Covers strengths, weaknesses vs PERN/Django, and recommendations for Nepal startups.
+URL: https://www.rahulranjan.com.np/blog/mern-stack-guide-2026.html
+
+### SEO Services Nepal Guide (2026)
+Guide to understanding SEO services in Nepal  what's included, realistic results timeline, pricing, red flags to avoid, and questions to ask any SEO provider.
+URL: https://www.rahulranjan.com.np/blog/seo-services-nepal-guide.html
+
+### Google Analytics 4 Setup Guide Nepal (2026)
+Step-by-step GA4 setup guide for Nepal business websites. Covers property creation, tracking code installation, event tracking, conversion setup, and Search Console integration.
+URL: https://www.rahulranjan.com.np/blog/google-analytics-4-guide-nepal.html
+
+## Location & Contact
+
+**Primary Location:** Biratnagar, Koshi Province, Nepal (PIN: 56613)
+**Geographic Coordinates:** 26.4525°N, 87.2718°E
+**Service Area:** Biratnagar, Itahari, Dharan, Morang District, Koshi Province, Nepal, and globally
+
+**Contact:**
+- Email: rahul.ranjan98153@gmail.com
+- Phone: +977 9805360131
+- Website: https://www.rahulranjan.com.np/
+- GitHub: https://github.com/rranjanr
+- LinkedIn: https://www.linkedin.com/in/rahul-ranjan-dev/
+
+**Local availability:** Available for in-person meetings in Biratnagar. All project work done remotely. Responses within 24 hours.
+
+## Additional Pages
+
+- Homepage: https://www.rahulranjan.com.np/
+- Services: https://www.rahulranjan.com.np/services/
+- Blog: https://www.rahulranjan.com.np/blog/
+- Web Developer Biratnagar: https://www.rahulranjan.com.np/web-developer-biratnagar.html
+- Sitemap: https://www.rahulranjan.com.np/sitemap.xml

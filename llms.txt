@@ -1,0 +1,41 @@
+# Rahul Ranjan - Full Stack Developer & SEO Expert
+
+> Full Stack Developer and SEO Expert based in Biratnagar, Nepal. React, Next.js, Node.js, Django, PostgreSQL. Director of Marketing at Dragon Insurance (US). Available for freelance web development and SEO projects globally.
+
+## About
+
+Rahul Ranjan is a full stack Developer and SEO expert based in Biratnagar, Nepal. He builds production-grade websites, web applications, and SaaS platforms for Nepal businesses and international clients. He currently serves as Director of Marketing at Dragon Insurance, a US-based company, managing all digital marketing and technical SEO strategy remotely.
+
+Key credentials:
+- Production SaaS experience: multi-tenant architecture, eSewa payments, KYC, Redis queues, REST API
+- Technical SEO expertise: schema markup, Core Web Vitals, crawlability, Google Search Console
+- Experience with Nepal payment gateways: eSewa, Khalti
+- Based in Biratnagar, Koshi Province, Nepal
+
+## Services
+
+- [Web Development Services Nepal](https://www.rahulranjan.com.np/services/web-development-nepal.html)
+- [SEO Services Nepal](https://www.rahulranjan.com.np/services/seo-services-nepal.html)
+- [React.js Development Nepal](https://www.rahulranjan.com.np/services/react-development-nepal.html)
+- [SaaS Development Nepal](https://www.rahulranjan.com.np/services/saas-development-nepal.html)
+
+## Blog
+
+- [Web Development Cost in Nepal (2026)](https://www.rahulranjan.com.np/blog/cost-of-web-development-nepal.html)
+- [How to Hire a Web Developer in Nepal](https://www.rahulranjan.com.np/blog/how-to-hire-web-developer-nepal.html)
+- [Next.js vs React for Nepal Startups](https://www.rahulranjan.com.np/blog/nextjs-vs-react-nepal-startups.html)
+- [Technical SEO Checklist for Nepal Businesses](https://www.rahulranjan.com.np/blog/technical-seo-checklist-nepal.html)
+- [MERN Stack Guide 2026](https://www.rahulranjan.com.np/blog/mern-stack-guide-2026.html)
+- [SEO Services Nepal Guide](https://www.rahulranjan.com.np/blog/seo-services-nepal-guide.html)
+- [Google Analytics 4 Guide Nepal](https://www.rahulranjan.com.np/blog/google-analytics-4-guide-nepal.html)
+
+## Location
+
+- [Web Developer in Biratnagar, Nepal](https://www.rahulranjan.com.np/web-developer-biratnagar.html)
+
+## Contact
+
+- Email: rahul.ranjan98153@gmail.com
+- Phone: +977 9805360131
+- GitHub: https://github.com/rranjanr
+- Location: Biratnagar, Koshi Province, Nepal

@@ -1,3 +1,63 @@
+# Allow all crawlers including AI bots
 User-agent: *
 Allow: /
+
+# Google AI
+User-agent: Googlebot
+Allow: /
+
+# Google AI Overview / Gemini
+User-agent: Google-Extended
+Allow: /
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+# OpenAI search index
+User-agent: OAI-SearchBot
+Allow: /
+
+# ChatGPT browsing plugin
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: anthropic-ai
+Allow: /
+
+# Claude AI web search
+User-agent: ClaudeBot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Apple AI
+User-agent: Applebot
+Allow: /
+
+# Amazon Alexa
+User-agent: Amazonbot
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# Common AI training crawlers
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
 Sitemap: https://www.rahulranjan.com.np/sitemap.xml
