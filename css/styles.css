@@ -56,7 +56,7 @@
     --mn-grad:       linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
 }
 
-/* ─── Dark-scope token remap — brightens every var(--text/border)
+/* ─── Dark-scope token remap  brightens every var(--text/border)
        consumer (contact panel, stat labels, chips, nav) at once ── */
 html.dark {
     --text-1:  var(--mn-text-1);
@@ -1217,7 +1217,7 @@ html.dark {
 }
 .skill-card-sub { font-size: 0.73rem; color: var(--text-3); margin-top: 2px; }
 
-/* Card color themes — top accent bar + colored header + icon */
+/* Card color themes  top accent bar + colored header + icon */
 .skill-card-blue  { border-top: 3px solid #2563EB; }
 .skill-card-green { border-top: 3px solid #059669; }
 .skill-card-slate { border-top: 3px solid #475569; }
@@ -1238,7 +1238,7 @@ html.dark {
 
 .skill-chip-grid { display: flex; flex-wrap: wrap; gap: 0.45rem; padding: 1rem 1.25rem; }
 
-/* Brand-colored chips — set --chip-icon, --chip-bg, --chip-border per chip */
+/* Brand-colored chips  set --chip-icon, --chip-bg, --chip-border per chip */
 .skill-chip-v2 {
     display: inline-flex;
     align-items: center;
@@ -1458,7 +1458,7 @@ a:focus-visible {
 }
 
 /* ═══════════════════════════════════════════════════════════
-   AMBIENT BACKGROUND SYSTEM — Living Depth Layer
+   AMBIENT BACKGROUND SYSTEM  Living Depth Layer
    Transforms flat white into a breathing, luminous canvas.
    ═══════════════════════════════════════════════════════════ */
 
@@ -1674,11 +1674,11 @@ section#contact {
 }
 
 /* ═══════════════════════════════════════════════════════════
-   MIDNIGHT SaaS THEME — premium unified dark identity
+   MIDNIGHT SaaS THEME  premium unified dark identity
    Reference quality: Linear · Vercel · Railway
    ═══════════════════════════════════════════════════════════ */
 
-/* ─── HERO — the showpiece ──────────────────────────────── */
+/* ─── HERO  the showpiece ──────────────────────────────── */
 .hero-bg {
     background:
         radial-gradient(ellipse 78% 58% at 50% -12%, rgba(59,130,246,.46) 0%, transparent 60%),
@@ -1738,7 +1738,7 @@ section#contact {
     filter: drop-shadow(0 1px 14px rgba(96,165,250,.25));
 }
 
-/* ─── Buttons — gradient + glow ─────────────────────────── */
+/* ─── Buttons  gradient + glow ─────────────────────────── */
 .dark .btn-primary {
     background: var(--mn-grad);
     box-shadow: 0 8px 28px rgba(59,130,246,.35), inset 0 1px 0 rgba(255,255,255,.18);

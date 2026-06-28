@@ -1,41 +1,49 @@
-# Rahul Ranjan - Full Stack Developer & SEO Expert
+# Rahul Ranjan - Independent SEO Expert & Digital Marketing Consultant
 
-> Full Stack Developer and SEO Expert based in Biratnagar, Nepal. React, Next.js, Node.js, Django, PostgreSQL. Director of Marketing at Dragon Insurance (US). Available for freelance web development and SEO projects globally.
+> Independent SEO Expert and Digital Marketing Consultant based in Biratnagar, Nepal. Technical SEO, Google Analytics 4, social media strategy, lead generation, and content marketing. Also a Full Stack Developer (React, Node.js, Django). Director of Marketing at Dragon Insurance (US-based). Available for freelance SEO and digital marketing projects globally.
 
 ## About
 
-Rahul Ranjan is a full stack Developer and SEO expert based in Biratnagar, Nepal. He builds production-grade websites, web applications, and SaaS platforms for Nepal businesses and international clients. He currently serves as Director of Marketing at Dragon Insurance, a US-based company, managing all digital marketing and technical SEO strategy remotely.
+Rahul Ranjan is an independent SEO expert and digital marketing consultant based in Biratnagar, Koshi Province, Nepal. He specialises in technical SEO, keyword strategy, Google Analytics 4 implementation, and lead generation for Nepal businesses and international clients.
+
+He currently serves as Director of Marketing at Dragon Insurance, a US-based insurance company, managing all digital marketing, SEO strategy, GA4 analytics, and lead generation remotely from Nepal. He is also a Full Stack Developer, which means he implements SEO changes directly in code without requiring a separate developer.
 
 Key credentials:
-- Production SaaS experience: multi-tenant architecture, eSewa payments, KYC, Redis queues, REST API
-- Technical SEO expertise: schema markup, Core Web Vitals, crawlability, Google Search Console
-- Experience with Nepal payment gateways: eSewa, Khalti
-- Based in Biratnagar, Koshi Province, Nepal
+- Independent SEO Expert: technical SEO audits, keyword research (Ahrefs Pro), schema markup, Core Web Vitals optimisation, Google Search Console
+- Google Analytics 4 certified: custom event tracking, conversion goals, Looker Studio dashboards
+- Full Stack Developer: React, Next.js, Node.js, Django, PostgreSQL -- able to implement SEO fixes directly
+- Nepal market expertise: local keyword research, Nepal business directories, eSewa/Khalti integrations
+- Based in Biratnagar, Koshi Province, Nepal (available in-person locally, all project work done remotely)
 
 ## Services
 
-- [Web Development Services Nepal](https://www.rahulranjan.com.np/services/web-development-nepal.html)
-- [SEO Services Nepal](https://www.rahulranjan.com.np/services/seo-services-nepal.html)
+- [SEO Expert Services Nepal](https://www.rahulranjan.com.np/services/seo-services-nepal.html) -- Technical SEO, keyword strategy, schema markup, Core Web Vitals
+- [Digital Marketing Services Nepal](https://www.rahulranjan.com.np/digital-marketing-nepal.html) -- SEO, social media, GA4, lead generation
+- [Website Design & Web Development Nepal](https://www.rahulranjan.com.np/services/web-development-nepal.html) -- React, Next.js, Node.js, Django
 - [React.js Development Nepal](https://www.rahulranjan.com.np/services/react-development-nepal.html)
 - [SaaS Development Nepal](https://www.rahulranjan.com.np/services/saas-development-nepal.html)
 
 ## Blog
 
+- [SEO Expert in Nepal: How to Find and Hire One (2026)](https://www.rahulranjan.com.np/blog/seo-expert-nepal.html)
+- [Advanced SEO Training in Nepal: Learn SEO and Get Online Work](https://www.rahulranjan.com.np/blog/seo-training-nepal.html)
+- [Best SEO Company in Nepal: How to Choose (2026)](https://www.rahulranjan.com.np/blog/seo-services-nepal-guide.html)
+- [Technical SEO Checklist for Nepal Businesses (2026)](https://www.rahulranjan.com.np/blog/technical-seo-checklist-nepal.html)
+- [Google Analytics 4 Setup Guide for Nepal Businesses](https://www.rahulranjan.com.np/blog/google-analytics-4-guide-nepal.html)
 - [Web Development Cost in Nepal (2026)](https://www.rahulranjan.com.np/blog/cost-of-web-development-nepal.html)
 - [How to Hire a Web Developer in Nepal](https://www.rahulranjan.com.np/blog/how-to-hire-web-developer-nepal.html)
 - [Next.js vs React for Nepal Startups](https://www.rahulranjan.com.np/blog/nextjs-vs-react-nepal-startups.html)
-- [Technical SEO Checklist for Nepal Businesses](https://www.rahulranjan.com.np/blog/technical-seo-checklist-nepal.html)
 - [MERN Stack Guide 2026](https://www.rahulranjan.com.np/blog/mern-stack-guide-2026.html)
-- [SEO Services Nepal Guide](https://www.rahulranjan.com.np/blog/seo-services-nepal-guide.html)
-- [Google Analytics 4 Guide Nepal](https://www.rahulranjan.com.np/blog/google-analytics-4-guide-nepal.html)
+- [SEO, GEO, AEO and AI Search 2026](https://www.rahulranjan.com.np/blog/seo-geo-aeo-ai-search-2026.html)
 
-## Location
+## Location Pages
 
-- [Web Developer in Biratnagar, Nepal](https://www.rahulranjan.com.np/web-developer-biratnagar.html)
+- [SEO Expert & Web Developer in Biratnagar, Nepal](https://www.rahulranjan.com.np/web-developer-biratnagar.html)
 
 ## Contact
 
 - Email: rahul.ranjan98153@gmail.com
 - Phone: +977 9805360131
 - GitHub: https://github.com/rranjanr
+- LinkedIn: https://www.linkedin.com/in/rahul-ranjan-dev/
 - Location: Biratnagar, Koshi Province, Nepal

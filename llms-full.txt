@@ -1,110 +1,143 @@
-# Rahul Ranjan  Full Stack Developer & SEO Expert
+# Rahul Ranjan - Independent SEO Expert & Digital Marketing Consultant
 
-> Full Stack Developer and SEO Expert based in Biratnagar, Nepal. React, Next.js, Node.js, Django, PostgreSQL. Director of Marketing at Dragon Insurance (US). Available for freelance web development and SEO projects globally.
+> Independent SEO Expert and Digital Marketing Consultant based in Biratnagar, Nepal. Technical SEO, Google Analytics 4, social media marketing, lead generation, and content strategy. Also a Full Stack Developer (React, Node.js, Django). Director of Marketing at Dragon Insurance (US-based). Available for freelance SEO and digital marketing projects globally.
 
 ## About Rahul Ranjan
 
-Rahul Ranjan is a full stack Developer and SEO expert based in Biratnagar, Koshi Province, Nepal. He builds production-grade websites, web applications, and SaaS platforms for businesses across Nepal and globally.
+Rahul Ranjan is an independent SEO expert and digital marketing consultant based in Biratnagar, Koshi Province, Nepal. He specialises in technical SEO implementation, keyword strategy, Google Analytics 4, lead generation, and content marketing for Nepal businesses and international clients.
 
-He currently serves as Director of Marketing at Dragon Insurance  a US-based insurance company  managing all digital marketing, SEO strategy, and technical web implementation remotely. This represents the caliber of professional work Rahul delivers: international-standard output from Biratnagar, Nepal.
+He currently serves as Director of Marketing at Dragon Insurance, a US-based insurance company, managing all digital marketing, SEO strategy, GA4 analytics, and lead generation remotely from Nepal. This is live proof of what he delivers: international-standard digital marketing output from Biratnagar, Nepal.
+
+His strongest differentiator: Rahul is also a Full Stack Developer (React, Node.js, Django, PostgreSQL). This means he implements SEO changes directly in code -- no waiting on a separate developer, no briefing handoffs. A technical SEO audit becomes actual fixes on the same day.
 
 **Technical Skills:**
+- SEO: Technical SEO, Core Web Vitals (LCP/CLS/INP), schema markup (JSON-LD), keyword research, content strategy, internal linking, Google Search Console, Ahrefs Pro
+- Analytics: Google Analytics 4, Looker Studio, conversion tracking, event configuration, Search Console integration
+- Digital Marketing: Social media strategy (Facebook, Instagram, LinkedIn), paid ads (Google Ads, Meta Ads), email marketing, lead generation
 - Frontend: React.js, Next.js, TypeScript, Tailwind CSS, HTML/CSS
 - Backend: Node.js, Express.js, Django, Python, REST API design
 - Database: PostgreSQL, MySQL, MongoDB, Redis
-- DevOps: Docker, GitHub Actions, CI/CD pipelines, Linux server management
-- SEO: Technical SEO, Core Web Vitals (LCP/CLS/INP), Schema markup (JSON-LD), Google Search Console, Google Analytics 4, Ahrefs
+- DevOps: Docker, GitHub Actions, CI/CD, Linux server management
 
 **Nepal-specific expertise:**
-- eSewa payment gateway integration (including server-to-server verification)
-- Khalti payment gateway integration
+- Local keyword research for Nepal market (Ahrefs Pro data)
+- eSewa and Khalti payment gateway integration
 - Nepal Telecom / Ncell SMS API
 - KYC compliance for Nepal SaaS products
-- Local keyword research for Nepal market
+- Nepal business directory citations for local SEO
 
-## Projects
+## SEO & Digital Marketing Services
 
-### Bulk SMS SaaS Platform
-Production multi-tenant SaaS experience from a bulk SMS platform in Nepal.
-- Architecture: React (frontend), Node.js + Express (API), PostgreSQL with RLS (database), Redis + BullMQ (queue), PM2 (process manager)
-- Skills: Multi-tenant data isolation with PostgreSQL RLS, eSewa payment integration, KYC onboarding flow, REST API documentation in PHP/Python/Node.js/cURL, async job queue processing, admin portal
-
-### EduQuiz AI Quiz Platform
-AI-powered quiz generation platform built with React and Django.
-- Features: Dynamic question generation, scoring, progress tracking, multiple quiz categories
-
-### Website Scanner Tool
-Python-based tool for automated SEO auditing of Nepal business websites.
-- GitHub: https://github.com/rranjanr/website_scanner
-- Audits: crawlability, canonical tags, schema markup, page speed, mobile responsiveness
-
-### CI/CD Pipeline
-GitHub Actions-based CI/CD pipeline for Node.js projects.
-- GitHub: https://github.com/rranjanr/CIpipeline
-
-## Services
-
-### Web Development Services Nepal
-Custom websites and web applications for Nepal businesses.
-- Basic business website: NPR 15,000–40,000 (1–2 weeks)
-- E-commerce website: NPR 60,000–1,50,000 (3–6 weeks)
-- Custom web app / SaaS MVP: NPR 2,00,000+ (2–4 months)
-- URL: https://www.rahulranjan.com.np/services/web-development-nepal.html
-
-### SEO Services Nepal
-Technical SEO audit and implementation for Nepal businesses.
-- Technical SEO audit: NPR 15,000–30,000
-- Audit + implementation: NPR 30,000–80,000
-- Monthly retainer: NPR 20,000–50,000/month
+### SEO Expert Services Nepal
+Technical SEO audit and implementation for Nepal businesses and international clients.
+- Technical SEO audit (Core Web Vitals, crawlability, schema, on-page): NPR 15,000--30,000
+- Audit plus implementation: NPR 30,000--80,000
+- Monthly retainer (ongoing SEO management): NPR 20,000--50,000 per month
 - URL: https://www.rahulranjan.com.np/services/seo-services-nepal.html
+- Primary keywords targeted: seo expert in nepal, seo specialist nepal, technical SEO nepal
 
-### React.js & Next.js Development Nepal
+### Digital Marketing Services Nepal
+Full-service digital marketing: SEO, social media, Google Analytics 4, lead generation.
+- Starter package (SEO plus GA4): NPR 20,000--35,000 per month
+- Growth package (SEO plus social plus analytics): NPR 45,000--70,000 per month
+- Full stack package (all channels plus paid ads): NPR 80,000+ per month
+- URL: https://www.rahulranjan.com.np/digital-marketing-nepal.html
+- Primary keywords targeted: marketing company in nepal, digital marketing services nepal, social media marketing agency nepal
+
+### SEO Training Nepal
+1-on-1 advanced SEO coaching for Nepal professionals who want to learn SEO and get online freelancing work.
+- Per session (2 hours): NPR 5,000
+- Full coaching package (8 sessions): NPR 30,000
+- Covers: technical SEO, keyword research with Ahrefs, GA4 setup, schema markup, portfolio building, freelancing strategy
+- URL: https://www.rahulranjan.com.np/blog/seo-training-nepal.html
+- Primary keywords targeted: advanced seo training in nepal, seo training in nepal
+
+### Website Design & Web Development Nepal
+Custom website design and web development for Nepal businesses.
+- Basic business website: NPR 15,000--40,000 (1--2 weeks)
+- E-commerce website: NPR 60,000--150,000 (3--6 weeks)
+- Custom web app or SaaS MVP: NPR 200,000+ (2--4 months)
+- URL: https://www.rahulranjan.com.np/services/web-development-nepal.html
+- Primary keywords targeted: website design in nepal, web design company in nepal, web development company in nepal
+
+### React.js and Next.js Development Nepal
 React and Next.js applications for Nepal startups and businesses.
-- Basic Next.js website: NPR 30,000–70,000
-- React dashboard: NPR 60,000–1,50,000
-- Full stack React + API: NPR 1,50,000+
+- Basic Next.js website: NPR 30,000--70,000
+- React dashboard: NPR 60,000--150,000
+- Full stack React plus API: NPR 150,000+
 - URL: https://www.rahulranjan.com.np/services/react-development-nepal.html
 
 ### SaaS Development Nepal
 Multi-tenant SaaS platforms from MVP to production.
-- SaaS MVP: NPR 2,00,000–4,00,000
-- Full-featured SaaS: NPR 5,00,000–12,00,000
+- SaaS MVP: NPR 200,000--400,000
+- Full-featured SaaS: NPR 500,000--1,200,000
 - URL: https://www.rahulranjan.com.np/services/saas-development-nepal.html
 
 ## Blog Content
 
+### SEO Expert in Nepal: How to Find and Hire One (2026)
+Comprehensive guide for Nepal businesses looking to hire an SEO expert. Covers what an SEO expert does, what to pay (pricing in NPR), 7 questions to ask before hiring, red flags, and freelance vs agency comparison. Includes full FAQPage schema with 7 Q&As.
+URL: https://www.rahulranjan.com.np/blog/seo-expert-nepal.html
+Target keywords: seo expert in nepal (2,900/mo, KD 27), seo specialist nepal, hire seo expert nepal
+
+### Advanced SEO Training in Nepal: Learn SEO and Get Online Work (2026)
+Guide to advanced SEO training in Nepal. Covers what real advanced training includes (technical SEO, keyword research, GA4, schema), comparison of online skills for Nepal freelancers, month-by-month learning path, and 1-on-1 coaching offer by Rahul Ranjan. Includes FAQPage schema with 7 Q&As.
+URL: https://www.rahulranjan.com.np/blog/seo-training-nepal.html
+Target keywords: advanced seo training in nepal (720/mo, KD 20), seo training in nepal (320/mo, KD 38), online work in nepal (390/mo, KD 22)
+
+### Best SEO Company in Nepal: How to Choose (2026)
+Guide to choosing the best SEO company or expert in Nepal. Covers what real SEO services include, honest pricing, red flags to avoid, and questions to ask before hiring. Targets commercial intent searchers evaluating SEO providers in Nepal.
+URL: https://www.rahulranjan.com.np/blog/seo-services-nepal-guide.html
+Target keywords: seo company in nepal (880/mo, KD 17), seo agency in nepal (210/mo, KD 13), seo in nepal (320/mo, KD 17)
+
+### Technical SEO Checklist for Nepal Businesses (2026)
+25-point technical SEO checklist for Nepal business websites. Covers crawlability, Core Web Vitals, mobile optimisation, schema markup, and on-page signals. Practical and implementable.
+URL: https://www.rahulranjan.com.np/blog/technical-seo-checklist-nepal.html
+
+### Google Analytics 4 Setup Guide for Nepal Businesses (2026)
+Step-by-step GA4 setup for Nepal business websites. Covers property creation, tracking code, custom event tracking, conversion goal configuration, and Search Console integration.
+URL: https://www.rahulranjan.com.np/blog/google-analytics-4-guide-nepal.html
+
+### SEO, GEO, AEO and AI Search 2026: Complete Nepal Strategy
+Guide to SEO strategy in 2026 covering Google AI Overviews, Perplexity citations, schema for AI extraction, and how Nepal businesses should approach generative engine optimisation (GEO) and answer engine optimisation (AEO).
+URL: https://www.rahulranjan.com.np/blog/seo-geo-aeo-ai-search-2026.html
+
 ### Web Development Cost in Nepal (2026)
-Comprehensive pricing guide for websites in Nepal. Covers basic sites (NPR 15K–50K), e-commerce (NPR 50K–2L), and SaaS (NPR 2L+). Includes freelancer vs agency comparison and Rahul's actual rates.
+Comprehensive pricing guide for websites in Nepal. Covers basic sites (NPR 15K--50K), e-commerce (NPR 50K--2L), and SaaS (NPR 2L+). Includes freelancer vs agency comparison and actual rates.
 URL: https://www.rahulranjan.com.np/blog/cost-of-web-development-nepal.html
 
 ### How to Hire a Web Developer in Nepal (2026)
-Guide to finding and vetting web developers in Nepal. Includes 10 questions to ask, red flags to avoid, portfolio review checklist, and communication best practices.
+Guide to finding and vetting web developers in Nepal. Includes 10 questions to ask, red flags to avoid, portfolio review checklist, and what to pay.
 URL: https://www.rahulranjan.com.np/blog/how-to-hire-web-developer-nepal.html
 
 ### Next.js vs React for Nepal Startups (2026)
-Technical comparison of Next.js and React for Nepal businesses. Covers SEO implications, performance benchmarks on Nepal's 4G network, and decision framework for choosing between the two.
+Technical comparison of Next.js and React for Nepal businesses. Covers SEO implications, performance on Nepal's 4G network, and a decision framework.
 URL: https://www.rahulranjan.com.np/blog/nextjs-vs-react-nepal-startups.html
 
-### Technical SEO Checklist for Nepal Businesses (2026)
-25-point technical SEO checklist for Nepal business websites. Covers crawlability, Core Web Vitals, mobile optimization, schema markup, and on-page signals.
-URL: https://www.rahulranjan.com.np/blog/technical-seo-checklist-nepal.html
-
 ### MERN Stack Guide 2026
-Analysis of MERN stack (MongoDB, Express, React, Node.js) in 2026. Covers strengths, weaknesses vs PERN/Django, and recommendations for Nepal startups.
+Analysis of MERN stack in 2026. Covers strengths, weaknesses vs PERN and Django, and recommendations for Nepal startups.
 URL: https://www.rahulranjan.com.np/blog/mern-stack-guide-2026.html
 
-### SEO Services Nepal Guide (2026)
-Guide to understanding SEO services in Nepal  what's included, realistic results timeline, pricing, red flags to avoid, and questions to ask any SEO provider.
-URL: https://www.rahulranjan.com.np/blog/seo-services-nepal-guide.html
+## Projects and Work History
 
-### Google Analytics 4 Setup Guide Nepal (2026)
-Step-by-step GA4 setup guide for Nepal business websites. Covers property creation, tracking code installation, event tracking, conversion setup, and Search Console integration.
-URL: https://www.rahulranjan.com.np/blog/google-analytics-4-guide-nepal.html
+### Dragon Insurance Services (Current)
+Director of Marketing and Technology at Dragon Insurance Services (mydragon.us), a US-based insurance company. Manages all digital marketing, SEO strategy, Google Analytics 4 implementation, lead generation, and social media as a remote engagement from Biratnagar, Nepal.
 
-## Location & Contact
+### Foxnett Bulk SMS SaaS Platform (Past)
+Lead Developer of the Foxnett Bulk SMS SaaS platform in Nepal. Multi-tenant system with eSewa payments, role-based access control, async SMS queuing via Redis/BullMQ, KYC onboarding, and REST API documentation in PHP, Python, Node.js, and cURL.
+
+### Website Scanner Tool
+Python-based tool for automated SEO auditing of Nepal business websites.
+GitHub: https://github.com/rranjanr/website_scanner
+Audits: crawlability, canonical tags, schema markup, page speed, mobile responsiveness.
+
+### EduQuiz AI Quiz Platform
+AI-powered quiz generation platform built with React and Django. Dynamic question generation, scoring, progress tracking, and multiple quiz categories.
+
+## Location and Contact
 
 **Primary Location:** Biratnagar, Koshi Province, Nepal (PIN: 56613)
-**Geographic Coordinates:** 26.4525°N, 87.2718°E
+**Geographic Coordinates:** 26.4525N, 87.2718E
 **Service Area:** Biratnagar, Itahari, Dharan, Morang District, Koshi Province, Nepal, and globally
 
 **Contact:**
@@ -116,10 +149,11 @@ URL: https://www.rahulranjan.com.np/blog/google-analytics-4-guide-nepal.html
 
 **Local availability:** Available for in-person meetings in Biratnagar. All project work done remotely. Responses within 24 hours.
 
-## Additional Pages
+## All Pages
 
 - Homepage: https://www.rahulranjan.com.np/
-- Services: https://www.rahulranjan.com.np/services/
-- Blog: https://www.rahulranjan.com.np/blog/
-- Web Developer Biratnagar: https://www.rahulranjan.com.np/web-developer-biratnagar.html
+- Services hub: https://www.rahulranjan.com.np/services/
+- Blog hub: https://www.rahulranjan.com.np/blog/
+- SEO Expert Biratnagar: https://www.rahulranjan.com.np/web-developer-biratnagar.html
+- Digital Marketing Nepal: https://www.rahulranjan.com.np/digital-marketing-nepal.html
 - Sitemap: https://www.rahulranjan.com.np/sitemap.xml

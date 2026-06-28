@@ -5,7 +5,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://www.rahulranjan.com.np/</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -17,7 +17,15 @@
   <!-- Location page  highest priority new page -->
   <url>
     <loc>https://www.rahulranjan.com.np/web-developer-biratnagar.html</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Digital marketing page -->
+  <url>
+    <loc>https://www.rahulranjan.com.np/digital-marketing-nepal.html</loc>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -25,7 +33,7 @@
   <!-- Services hub -->
   <url>
     <loc>https://www.rahulranjan.com.np/services/</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -40,7 +48,7 @@
 
   <url>
     <loc>https://www.rahulranjan.com.np/services/seo-services-nepal.html</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -62,7 +70,7 @@
   <!-- Blog hub -->
   <url>
     <loc>https://www.rahulranjan.com.np/blog/</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -91,7 +99,7 @@
 
   <url>
     <loc>https://www.rahulranjan.com.np/blog/technical-seo-checklist-nepal.html</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -105,7 +113,7 @@
 
   <url>
     <loc>https://www.rahulranjan.com.np/blog/seo-services-nepal-guide.html</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -120,6 +128,21 @@
   <url>
     <loc>https://www.rahulranjan.com.np/blog/seo-geo-aeo-ai-search-2026.html</loc>
     <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- New blog posts (2026-06-28) -->
+  <url>
+    <loc>https://www.rahulranjan.com.np/blog/seo-expert-nepal.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rahulranjan.com.np/blog/seo-training-nepal.html</loc>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
