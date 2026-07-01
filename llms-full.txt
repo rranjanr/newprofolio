@@ -75,6 +75,21 @@ Multi-tenant SaaS platforms from MVP to production.
 
 ## Blog Content
 
+### Local SEO Nepal: How to Rank on Google Maps (2026 Guide)
+Complete guide to local SEO for Nepal businesses. Covers how Google ranks businesses in the local pack (relevance, distance, prominence), step-by-step Google Business Profile setup and verification for Nepal addresses, building Google Reviews, LocalBusiness JSON-LD schema with Nepal-specific fields (addressCountry: NP), local citation building across Nepal directories (Yellow Pages Nepal, Hamrobazaar, Justdial), NAP consistency, and on-page local SEO signals. Includes a table of Nepal citation sources with priority ratings. FAQ covers: what is local SEO in Nepal, how to rank on Google Maps, how long it takes, and whether a website is required.
+URL: https://www.rahulranjan.com.np/blog/local-seo-nepal.html
+Target keywords: local seo nepal, google business profile nepal, google maps ranking nepal, local search nepal, local seo for nepal businesses
+
+### How to Increase Website Traffic in Nepal: 9 Methods (2026)
+Practical guide to increasing organic and overall website traffic for Nepal businesses. Covers 9 specific methods: (1) fixing technical SEO and Google Search Console indexing issues including Cloudflare settings that block Googlebot, (2) Nepal-specific keyword research using Ahrefs and Google Keyword Planner with Nepal targeting, (3) mobile optimisation for Nepal's 90%+ mobile traffic with PageSpeed Insights fixes, (4) Google Business Profile for local traffic, (5) content marketing targeting Nepal search intent, (6) internal linking structure, (7) Nepal business directories for citation and referral traffic, (8) Facebook and Instagram for top-of-funnel traffic, (9) Google Analytics 4 tracking and data-driven improvements. Includes a 3-phase priority order (first 30 days, days 31-90, days 91-180). FAQ covers: how long it takes, free traffic methods, why a site gets no traffic, and social media effectiveness in Nepal.
+URL: https://www.rahulranjan.com.np/blog/increase-website-traffic-nepal.html
+Target keywords: increase website traffic nepal, organic traffic nepal, website traffic nepal, how to get more website visitors nepal
+
+### Freelance SEO Expert in Nepal: Why Hire One Over an Agency (2026 Guide)
+Complete comparison guide for Nepal businesses deciding between a freelance SEO expert and an SEO agency. Covers: definition of a freelance SEO expert in Nepal, cost comparison table (freelance NPR 15,000-60,000/month vs agency NPR 40,000-150,000+), who actually does the work (direct expert vs junior staff), 5-step vetting checklist for hiring (check if they rank their own site, ask for traffic data case studies, request a free mini-audit, check LinkedIn, start with one-time project before retainer), red flags (guaranteed rankings in 30 days, vague deliverables, no transparent reporting), Nepal-specific skills to look for (Cloudflare knowledge, mobile-first optimization, Ahrefs vs Semrush for Nepal data, Cloudflare issues, Nepali search query patterns), and pricing table for all SEO service types. FAQ covers: what is a freelance SEO expert Nepal, how much they charge, agency vs freelance comparison, how to find one, and what monthly service should include.
+URL: https://www.rahulranjan.com.np/blog/freelance-seo-expert-nepal.html
+Target keywords: freelance seo expert nepal, seo freelancer nepal, freelance seo nepal, hire seo freelancer nepal, independent seo expert nepal
+
 ### SEO Expert in Nepal: How to Find and Hire One (2026)
 Comprehensive guide for Nepal businesses looking to hire an SEO expert. Covers what an SEO expert does, what to pay (pricing in NPR), 7 questions to ask before hiring, red flags, and freelance vs agency comparison. Includes full FAQPage schema with 7 Q&As.
 URL: https://www.rahulranjan.com.np/blog/seo-expert-nepal.html
@@ -156,4 +171,7 @@ AI-powered quiz generation platform built with React and Django. Dynamic questio
 - Blog hub: https://www.rahulranjan.com.np/blog/
 - SEO Expert Biratnagar: https://www.rahulranjan.com.np/web-developer-biratnagar.html
 - Digital Marketing Nepal: https://www.rahulranjan.com.np/digital-marketing-nepal.html
+- Local SEO Nepal: https://www.rahulranjan.com.np/blog/local-seo-nepal.html
+- Increase Website Traffic Nepal: https://www.rahulranjan.com.np/blog/increase-website-traffic-nepal.html
+- Freelance SEO Expert Nepal: https://www.rahulranjan.com.np/blog/freelance-seo-expert-nepal.html
 - Sitemap: https://www.rahulranjan.com.np/sitemap.xml
