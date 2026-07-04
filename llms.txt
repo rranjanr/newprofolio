@@ -9,7 +9,7 @@ Rahul Ranjan is an independent SEO expert and digital marketing consultant based
 He currently serves as Director of Marketing at Dragon Insurance, a US-based insurance company, managing all digital marketing, SEO strategy, GA4 analytics, and lead generation remotely from Nepal. He is also a Full Stack Developer, which means he implements SEO changes directly in code without requiring a separate developer.
 
 Key credentials:
-- Independent SEO Expert: technical SEO audits, keyword research (Ahrefs Pro), schema markup, Core Web Vitals optimisation, Google Search Console
+- Independent SEO Expert: technical SEO audits, keyword research (Semrush Pro), schema markup, Core Web Vitals optimisation, Google Search Console
 - Google Analytics 4 certified: custom event tracking, conversion goals, Looker Studio dashboards
 - Full Stack Developer: React, Next.js, Node.js, Django, PostgreSQL -- able to implement SEO fixes directly
 - Nepal market expertise: local keyword research, Nepal business directories, eSewa/Khalti integrations

@@ -1924,3 +1924,344 @@ section#contact {
 @media (prefers-reduced-motion: reduce) {
     #home::before { animation: none; }
 }
+
+/* ═══════════════════════════════════════════════════════════
+   HERO v2  "Living Instrument"
+   Choreographed entrance · cursor spotlight · floating chips
+   · name sheen · skills ticker · crafted scroll cue
+   All transform/opacity. Mobile-LCP + reduced-motion safe.
+   ═══════════════════════════════════════════════════════════ */
+
+/* ─── Entrance choreography ──────────────────────────────── */
+.hv {
+    animation: heroRise .85s cubic-bezier(.22, 1, .36, 1) both;
+    animation-delay: calc(var(--hv, 0) * 110ms + 140ms);
+}
+@keyframes heroRise {
+    from { opacity: 0; transform: translateY(26px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Portrait: scale-only pop so the LCP image is never hidden */
+.hero-portrait {
+    animation: heroPop .9s cubic-bezier(.22, 1, .36, 1) both;
+}
+@keyframes heroPop {
+    from { transform: scale(.9); }
+    to   { transform: scale(1); }
+}
+
+/* ─── Cursor spotlight (desktop, JS-driven) ──────────────── */
+#hero-spotlight {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .7s ease;
+    background: radial-gradient(560px circle at var(--spot-x, 50%) var(--spot-y, 38%),
+        rgba(96,165,250,.11) 0%,
+        rgba(139,92,246,.055) 42%,
+        transparent 68%);
+}
+
+/* ─── Film grain (desktop texture) ───────────────────────── */
+.hero-grain {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    opacity: .05;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+}
+
+/* ─── Portrait system: halo + slower ring + orbit dot ────── */
+.profile-halo {
+    position: absolute;
+    inset: -30px;
+    border-radius: 50%;
+    z-index: 0;
+    background: radial-gradient(circle, rgba(59,130,246,.30) 0%, rgba(139,92,246,.12) 48%, transparent 72%);
+    animation: haloPulse 5.5s ease-in-out infinite;
+    pointer-events: none;
+}
+@keyframes haloPulse {
+    0%, 100% { transform: scale(1);    opacity: .7; }
+    50%      { transform: scale(1.12); opacity: 1; }
+}
+
+/* Slow the ring for a calmer, more expensive feel */
+.profile-ring { animation-duration: 14s; }
+.profile-ring::after { background: #070C18; }
+
+/* Satellite dot tracing the ring */
+.profile-orbit {
+    position: absolute;
+    inset: -13px;
+    border-radius: 50%;
+    z-index: 3;
+    pointer-events: none;
+    animation: ring-spin 14s linear infinite;
+}
+.orbit-dot {
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin-left: -4px;
+    border-radius: 50%;
+    background: #93C5FD;
+    box-shadow: 0 0 12px 3px rgba(96,165,250,.75), 0 0 30px 8px rgba(59,130,246,.3);
+}
+
+/* ─── Floating credibility chips (large screens only) ────── */
+.hero-chip {
+    position: absolute;
+    z-index: 4;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 14px;
+    border-radius: 100px;
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .02em;
+    white-space: nowrap;
+    color: rgba(255,255,255,.85);
+    background: rgba(255,255,255,.055);
+    border: 1px solid rgba(255,255,255,.13);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 6px 24px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.08);
+    pointer-events: none;
+}
+.hero-chip-1 { right: calc(100% + 46px); top: 4%;     animation: chipIn .8s ease-out 1.15s both, chipFloat 6.5s ease-in-out 2s   infinite alternate; }
+.hero-chip-2 { left:  calc(100% + 50px); top: 12%;    animation: chipIn .8s ease-out 1.3s  both, chipFloat 7.5s ease-in-out 2.4s infinite alternate; }
+.hero-chip-3 { left:  calc(100% + 64px); bottom: 8%;  animation: chipIn .8s ease-out 1.45s both, chipFloat 8s   ease-in-out 2.2s infinite alternate; }
+.hero-chip-4 { right: calc(100% + 58px); bottom: 2%;  animation: chipIn .8s ease-out 1.6s  both, chipFloat 7s   ease-in-out 2.6s infinite alternate; }
+@keyframes chipIn {
+    from { opacity: 0; transform: translateY(14px) scale(.94); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes chipFloat {
+    from { transform: translateY(0); }
+    to   { transform: translateY(-8px); }
+}
+
+/* ─── Badge: glass upgrade + live dot with ping ──────────── */
+.hero-badge {
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.15);
+    color: rgba(255,255,255,.82);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.09), 0 4px 20px rgba(0,0,0,.25);
+}
+.hero-badge-dot {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #34D399;
+    box-shadow: 0 0 8px rgba(52,211,153,.8);
+}
+.hero-badge-dot::before {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(52,211,153,.65);
+    animation: badgePing 2.2s cubic-bezier(0, 0, .2, 1) infinite;
+}
+@keyframes badgePing {
+    0%   { transform: scale(.6); opacity: 1; }
+    80%, 100% { transform: scale(1.9); opacity: 0; }
+}
+
+/* ─── Name: periodic sheen sweep ─────────────────────────── */
+#home .hero-name {
+    text-shadow: none;
+    background: linear-gradient(110deg,
+        #FFFFFF 0%, #FFFFFF 32%,
+        #BFDBFE 44%, #93C5FD 50%, #C4B5FD 56%,
+        #FFFFFF 68%, #FFFFFF 100%);
+    background-size: 240% 100%;
+    background-position: 120% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    filter: drop-shadow(0 2px 28px rgba(59,130,246,.35));
+    animation-name: heroRise, nameSheen;
+    animation-duration: .85s, 8s;
+    animation-timing-function: cubic-bezier(.22,1,.36,1), ease-in-out;
+    animation-delay: calc(var(--hv, 0) * 110ms + 140ms), 2.2s;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: both, none;
+}
+@keyframes nameSheen {
+    0%       { background-position: 120% 0; }
+    22%      { background-position: -60% 0; }
+    100%     { background-position: -60% 0; }
+}
+
+/* ─── Primary button: shine sweep ────────────────────────── */
+.btn-shine {
+    position: relative;
+    overflow: hidden;
+}
+.btn-shine::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -80%;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(105deg, transparent 0%, rgba(255,255,255,.35) 50%, transparent 100%);
+    transform: skewX(-22deg);
+    animation: btnShine 5.5s ease-in-out 2.6s infinite;
+    pointer-events: none;
+}
+@keyframes btnShine {
+    0%       { left: -80%; }
+    18%      { left: 130%; }
+    100%     { left: 130%; }
+}
+
+/* ─── Skills ticker marquee ──────────────────────────────── */
+.hero-marquee {
+    max-width: 680px;
+    margin: 52px auto 0;
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 86%, transparent 100%);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 86%, transparent 100%);
+}
+.hero-marquee-track {
+    display: flex;
+    width: max-content;
+    animation: mqScroll 46s linear infinite;
+}
+.mq-set {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    padding-right: 26px;
+    flex: none;
+}
+.mq-set span:not(.mq-dot) {
+    font-size: .72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .16em;
+    color: rgba(255,255,255,.38);
+    white-space: nowrap;
+}
+.mq-dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: rgba(96,165,250,.55);
+    flex: none;
+}
+@keyframes mqScroll {
+    to { transform: translateX(-50%); }
+}
+
+/* ─── Crafted scroll cue ─────────────────────────────────── */
+.hero-scroll {
+    position: absolute;
+    bottom: 26px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    text-decoration: none;
+    animation: heroFade 1s ease 2.3s both;
+}
+.hero-scroll-pill {
+    display: block;
+    width: 25px;
+    height: 40px;
+    border: 1.5px solid rgba(255,255,255,.30);
+    border-radius: 100px;
+    position: relative;
+    transition: border-color .25s ease;
+}
+.hero-scroll-dot {
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    margin-left: -2px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.85);
+    animation: scrollDot 2.2s cubic-bezier(.45, 0, .55, 1) infinite;
+}
+.hero-scroll-label {
+    font-size: .6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    color: rgba(255,255,255,.42);
+    transition: color .25s ease;
+}
+.hero-scroll:hover .hero-scroll-pill { border-color: rgba(147,197,253,.8); }
+.hero-scroll:hover .hero-scroll-label { color: rgba(255,255,255,.75); }
+.hero-scroll:focus-visible {
+    outline: 2px solid #60A5FA;
+    outline-offset: 4px;
+    border-radius: 8px;
+}
+@keyframes scrollDot {
+    0%   { transform: translateY(0);    opacity: 1; }
+    70%  { transform: translateY(15px); opacity: 0; }
+    100% { transform: translateY(0);    opacity: 0; }
+}
+@keyframes heroFade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* ─── Responsive guards (mobile LCP protection) ──────────── */
+@media (max-width: 1180px) {
+    .hero-chip { display: none; }
+}
+@media (max-width: 768px) {
+    .hero-grain { display: none; }
+    #hero-spotlight { display: none; }
+    .profile-halo { animation: none; opacity: .55; }
+    .profile-orbit { display: none; }
+    #home .hero-name {
+        animation-name: heroRise;
+        animation-duration: .85s;
+        animation-timing-function: cubic-bezier(.22,1,.36,1);
+        animation-delay: calc(var(--hv, 0) * 110ms + 140ms);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        background: linear-gradient(120deg, #FFFFFF 0%, #DBEAFE 70%, #BFDBFE 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    .btn-shine::after { animation: none; opacity: 0; }
+    .hero-marquee { margin-top: 40px; }
+    .hero-marquee-track { animation-duration: 34s; }
+    .hero-scroll { bottom: 18px; }
+}
+
+/* ─── Reduced motion: everything settles, nothing moves ──── */
+@media (prefers-reduced-motion: reduce) {
+    .hv, .hero-portrait, #home .hero-name,
+    .hero-chip, .hero-scroll,
+    .profile-halo, .profile-orbit, .profile-ring,
+    .hero-marquee-track, .hero-scroll-dot,
+    .hero-badge-dot::before, .btn-shine::after {
+        animation: none !important;
+    }
+    #home .hero-name { background-position: 50% 0; }
+    #hero-spotlight { display: none; }
+}

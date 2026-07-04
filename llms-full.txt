@@ -11,7 +11,7 @@ He currently serves as Director of Marketing at Dragon Insurance, a US-based ins
 His strongest differentiator: Rahul is also a Full Stack Developer (React, Node.js, Django, PostgreSQL). This means he implements SEO changes directly in code -- no waiting on a separate developer, no briefing handoffs. A technical SEO audit becomes actual fixes on the same day.
 
 **Technical Skills:**
-- SEO: Technical SEO, Core Web Vitals (LCP/CLS/INP), schema markup (JSON-LD), keyword research, content strategy, internal linking, Google Search Console, Ahrefs Pro
+- SEO: Technical SEO, Core Web Vitals (LCP/CLS/INP), schema markup (JSON-LD), keyword research, content strategy, internal linking, Google Search Console, Semrush Pro
 - Analytics: Google Analytics 4, Looker Studio, conversion tracking, event configuration, Search Console integration
 - Digital Marketing: Social media strategy (Facebook, Instagram, LinkedIn), paid ads (Google Ads, Meta Ads), email marketing, lead generation
 - Frontend: React.js, Next.js, TypeScript, Tailwind CSS, HTML/CSS
@@ -20,7 +20,7 @@ His strongest differentiator: Rahul is also a Full Stack Developer (React, Node.
 - DevOps: Docker, GitHub Actions, CI/CD, Linux server management
 
 **Nepal-specific expertise:**
-- Local keyword research for Nepal market (Ahrefs Pro data)
+- Local keyword research for Nepal market (Semrush Pro data)
 - eSewa and Khalti payment gateway integration
 - Nepal Telecom / Ncell SMS API
 - KYC compliance for Nepal SaaS products
@@ -48,7 +48,7 @@ Full-service digital marketing: SEO, social media, Google Analytics 4, lead gene
 1-on-1 advanced SEO coaching for Nepal professionals who want to learn SEO and get online freelancing work.
 - Per session (2 hours): NPR 5,000
 - Full coaching package (8 sessions): NPR 30,000
-- Covers: technical SEO, keyword research with Ahrefs, GA4 setup, schema markup, portfolio building, freelancing strategy
+- Covers: technical SEO, keyword research with Semrush, GA4 setup, schema markup, portfolio building, freelancing strategy
 - URL: https://www.rahulranjan.com.np/blog/seo-training-nepal.html
 - Primary keywords targeted: advanced seo training in nepal, seo training in nepal
 

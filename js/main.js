@@ -695,3 +695,38 @@ function initProjectGalleries() {
         if (nextBtn) nextBtn.addEventListener('click', () => setIndex(index + 1));
     });
 }
+
+// Hero cursor spotlight (Hero v2 "Living Instrument")
+// Desktop pointer-fine only; rAF-throttled; respects reduced motion.
+(function initHeroSpotlight() {
+    function setup() {
+        const hero = document.getElementById('home');
+        const spot = document.getElementById('hero-spotlight');
+        if (!hero || !spot) return;
+        const fine = window.matchMedia('(pointer: fine)').matches;
+        const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!fine || reduced || window.innerWidth < 1024) return;
+
+        let lx = 0, ly = 0, raf = null;
+        hero.addEventListener('mousemove', function (e) {
+            const r = hero.getBoundingClientRect();
+            lx = e.clientX - r.left;
+            ly = e.clientY - r.top;
+            if (raf) return;
+            raf = requestAnimationFrame(function () {
+                spot.style.setProperty('--spot-x', lx + 'px');
+                spot.style.setProperty('--spot-y', ly + 'px');
+                spot.style.opacity = '1';
+                raf = null;
+            });
+        }, { passive: true });
+        hero.addEventListener('mouseleave', function () {
+            spot.style.opacity = '0';
+        }, { passive: true });
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setup);
+    } else {
+        setup();
+    }
+})();

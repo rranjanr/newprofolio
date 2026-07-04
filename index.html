@@ -405,23 +405,31 @@
         <!-- Hero Section -->
         <section id="home"
             class="relative min-h-screen flex items-center justify-center hero-bg text-white overflow-hidden">
+            <div id="hero-spotlight" aria-hidden="true"></div>
+            <div class="hero-grain" aria-hidden="true"></div>
             <div class="container mx-auto px-4 z-10 text-center">
-                <div class="profile-pic-container relative mx-auto mb-8">
+                <div class="profile-pic-container hero-portrait relative mx-auto mb-8">
+                    <div class="profile-halo" aria-hidden="true"></div>
                     <div class="profile-ring"></div>
+                    <div class="profile-orbit" aria-hidden="true"><span class="orbit-dot"></span></div>
                     <img src="images/profilepic.jpg"
                         alt="Rahul Ranjan - Full Stack Developer and SaaS Developer from Biratnagar, Nepal"
                         class="profile-pic rounded-full mx-auto object-cover"
                         fetchpriority="high" width="180" height="180">
+                    <div class="hero-chip hero-chip-1" aria-hidden="true"><i class="fas fa-chart-line" style="color:#34D399"></i> GA4 Certified</div>
+                    <div class="hero-chip hero-chip-2" aria-hidden="true"><i class="fas fa-magnifying-glass-chart" style="color:#60A5FA"></i> Semrush Pro</div>
+                    <div class="hero-chip hero-chip-3" aria-hidden="true"><i class="fas fa-video" style="color:#EC4899"></i> AI Video Production</div>
+                    <div class="hero-chip hero-chip-4" aria-hidden="true"><i class="fas fa-code" style="color:#FBBF24"></i> SEO + Full Stack</div>
                 </div>
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 text-sm font-medium" style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.8);">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse flex-shrink-0"></span>
+                <div class="hero-badge hv inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 text-sm font-medium" style="--hv:1">
+                    <span class="hero-badge-dot flex-shrink-0"></span>
                     Available for freelance &amp; full-time work
                 </div>
-                <h1 class="text-5xl md:text-7xl font-bold mb-3 text-shadow">Rahul Ranjan</h1>
-                <p class="text-xl md:text-2xl mb-3 gradient-text font-semibold">SEO Expert &amp; Digital Marketing Consultant &mdash; Biratnagar, Nepal</p>
-                <p class="text-sm md:text-base mb-10 max-w-xl mx-auto" style="color:rgba(255,255,255,.6);">Technical SEO &middot; Google Analytics 4 &middot; Lead Generation &middot; Social Media &middot; Content Strategy &mdash; measurable organic growth for Nepal businesses &amp; global clients.</p>
-                <div class="flex flex-col sm:flex-row justify-center sm:gap-4 gap-4">
-                    <a href="#contact" class="btn-primary">
+                <h1 class="hero-name hv text-5xl md:text-7xl font-bold mb-3" style="--hv:2">Rahul Ranjan</h1>
+                <p class="hv text-xl md:text-2xl mb-3 gradient-text font-semibold" style="--hv:3">SEO Expert &amp; Digital Marketing Consultant, Biratnagar, Nepal</p>
+                <p class="hv text-sm md:text-base mb-10 max-w-xl mx-auto" style="--hv:4;color:rgba(255,255,255,.6);">Technical SEO &middot; Google Analytics 4 &middot; Lead Generation &middot; Social Media &middot; Content Strategy: measurable organic growth for Nepal businesses &amp; global clients.</p>
+                <div class="hv flex flex-col sm:flex-row justify-center sm:gap-4 gap-4" style="--hv:5">
+                    <a href="#contact" class="btn-primary btn-shine">
                         <i class="fas fa-paper-plane text-sm"></i>
                         Hire Me
                     </a>
@@ -434,12 +442,39 @@
                         Download CV
                     </a>
                 </div>
+                <div class="hero-marquee hv" style="--hv:6" aria-hidden="true">
+                    <div class="hero-marquee-track">
+                        <div class="mq-set">
+                            <span>Technical SEO</span><span class="mq-dot"></span>
+                            <span>Google Analytics 4</span><span class="mq-dot"></span>
+                            <span>Core Web Vitals</span><span class="mq-dot"></span>
+                            <span>Schema Markup</span><span class="mq-dot"></span>
+                            <span>Content Strategy</span><span class="mq-dot"></span>
+                            <span>React &amp; Next.js</span><span class="mq-dot"></span>
+                            <span>Lead Generation</span><span class="mq-dot"></span>
+                            <span>Local SEO</span><span class="mq-dot"></span>
+                            <span>Search Console</span><span class="mq-dot"></span>
+                            <span>Node.js &amp; Django</span><span class="mq-dot"></span>
+                        </div>
+                        <div class="mq-set">
+                            <span>Technical SEO</span><span class="mq-dot"></span>
+                            <span>Google Analytics 4</span><span class="mq-dot"></span>
+                            <span>Core Web Vitals</span><span class="mq-dot"></span>
+                            <span>Schema Markup</span><span class="mq-dot"></span>
+                            <span>Content Strategy</span><span class="mq-dot"></span>
+                            <span>React &amp; Next.js</span><span class="mq-dot"></span>
+                            <span>Lead Generation</span><span class="mq-dot"></span>
+                            <span>Local SEO</span><span class="mq-dot"></span>
+                            <span>Search Console</span><span class="mq-dot"></span>
+                            <span>Node.js &amp; Django</span><span class="mq-dot"></span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-                <a href="#about" class="hover:text-white transition-colors" style="color:rgba(255,255,255,.55);">
-                    <i class="fas fa-chevron-down text-2xl"></i>
-                </a>
-            </div>
+            <a href="#about" class="hero-scroll" aria-label="Scroll to about section">
+                <span class="hero-scroll-pill" aria-hidden="true"><span class="hero-scroll-dot"></span></span>
+                <span class="hero-scroll-label">scroll</span>
+            </a>
         </section>
 
         <!-- About Section -->
