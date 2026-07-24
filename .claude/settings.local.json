@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git -C \"C:/Users/Acer/Desktop/BCA/Projects/Rahul-Protfolio\" log --oneline -10)"
+      "Bash(git -C \"C:/Users/Acer/Desktop/BCA/Projects/Rahul-Protfolio\" log --oneline -10)",
+      "Bash(python -c ' *)",
+      "Bash(python3 -c ' *)"
     ]
   }
 }

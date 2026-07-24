@@ -1,23 +1,26 @@
 # Rahul Ranjan - Independent SEO Expert & Digital Marketing Consultant
 
-> Independent SEO Expert and Digital Marketing Consultant based in Biratnagar, Nepal. Technical SEO, Google Analytics 4, social media strategy, lead generation, and content marketing. Also a Full Stack Developer (React, Node.js, Django). Director of Marketing at Dragon Insurance (US-based). Available for freelance SEO and digital marketing projects globally.
+> Independent SEO Expert and Digital Marketing Consultant based in Biratnagar, Nepal. Technical SEO, Google Analytics 4, social media strategy, lead generation, and content marketing. Also a Full Stack Developer (React, Node.js, Django). Available for freelance SEO and digital marketing projects globally.
 
 ## About
 
 Rahul Ranjan is an independent SEO expert and digital marketing consultant based in Biratnagar, Koshi Province, Nepal. He specialises in technical SEO, keyword strategy, Google Analytics 4 implementation, and lead generation for Nepal businesses and international clients.
 
-He currently serves as Director of Marketing at Dragon Insurance, a US-based insurance company, managing all digital marketing, SEO strategy, GA4 analytics, and lead generation remotely from Nepal. He is also a Full Stack Developer, which means he implements SEO changes directly in code without requiring a separate developer.
+He manages digital marketing, SEO strategy, GA4 analytics, and lead generation for clients remotely from Nepal. He is also a Full Stack Developer, which means he implements SEO changes directly in code without requiring a separate developer.
 
 Key credentials:
 - Independent SEO Expert: technical SEO audits, keyword research (Semrush Pro), schema markup, Core Web Vitals optimisation, Google Search Console
+- Google Business Profile management: 1 year of hands-on GBP setup, optimisation, and ongoing management experience
 - Google Analytics 4 certified: custom event tracking, conversion goals, Looker Studio dashboards
 - Full Stack Developer: React, Next.js, Node.js, Django, PostgreSQL -- able to implement SEO fixes directly
 - Nepal market expertise: local keyword research, Nepal business directories, eSewa/Khalti integrations
-- Based in Biratnagar, Koshi Province, Nepal (available in-person locally, all project work done remotely)
+- Based in Biratnagar, Koshi Province, Nepal (available in-person locally), also serving Kathmandu remotely
 
 ## Services
 
+- [Website + SEO Package Nepal](https://www.rahulranjan.com.np/services/website-seo-package-nepal.html) -- Website design and technical SEO bundled in one engagement
 - [SEO Expert Services Nepal](https://www.rahulranjan.com.np/services/seo-services-nepal.html) -- Technical SEO, keyword strategy, schema markup, Core Web Vitals
+- [Google Business Profile Management Nepal](https://www.rahulranjan.com.np/services/google-business-profile-management-nepal.html) -- GBP setup, review management, weekly posts, local pack ranking reports
 - [Digital Marketing Services Nepal](https://www.rahulranjan.com.np/digital-marketing-nepal.html) -- SEO, social media, GA4, lead generation
 - [Website Design & Web Development Nepal](https://www.rahulranjan.com.np/services/web-development-nepal.html) -- React, Next.js, Node.js, Django
 - [React.js Development Nepal](https://www.rahulranjan.com.np/services/react-development-nepal.html)
@@ -42,6 +45,8 @@ Key credentials:
 ## Location Pages
 
 - [SEO Expert & Web Developer in Biratnagar, Nepal](https://www.rahulranjan.com.np/web-developer-biratnagar.html)
+- [SEO Expert & Web Developer in Kathmandu, Nepal](https://www.rahulranjan.com.np/web-developer-seo-kathmandu.html)
+- [Free Website Audit Nepal](https://www.rahulranjan.com.np/free-website-audit.html) -- Free, no-obligation technical SEO and speed audit
 
 ## Contact
 

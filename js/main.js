@@ -730,3 +730,33 @@ function initProjectGalleries() {
         setup();
     }
 })();
+
+// Tag contact form submissions with which page sent the lead (?src= query param)
+(function tagContactFormSource() {
+    function setup() {
+        var pageSourceField = document.getElementById('page-source');
+        if (!pageSourceField) return;
+        var src = new URLSearchParams(window.location.search).get('src');
+        if (!src) return;
+
+        var labels = {
+            'kathmandu-page': 'Kathmandu SEO/web page inquiry',
+            'gbp-page': 'Google Business Profile management inquiry',
+            'website-seo-package': 'Website + SEO package inquiry',
+            'website-seo-package-launch': 'Website + SEO Launch Package inquiry',
+            'biratnagar-page': 'Biratnagar page inquiry'
+        };
+        var label = labels[src] || src;
+        pageSourceField.value = label;
+
+        var subjectField = document.getElementById('subject');
+        if (subjectField && !subjectField.value) {
+            subjectField.value = label;
+        }
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', setup);
+    } else {
+        setup();
+    }
+})();

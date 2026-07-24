@@ -1,12 +1,12 @@
 # Rahul Ranjan - Independent SEO Expert & Digital Marketing Consultant
 
-> Independent SEO Expert and Digital Marketing Consultant based in Biratnagar, Nepal. Technical SEO, Google Analytics 4, social media marketing, lead generation, and content strategy. Also a Full Stack Developer (React, Node.js, Django). Director of Marketing at Dragon Insurance (US-based). Available for freelance SEO and digital marketing projects globally.
+> Independent SEO Expert and Digital Marketing Consultant based in Biratnagar, Nepal. Technical SEO, Google Analytics 4, social media marketing, lead generation, and content strategy. Also a Full Stack Developer (React, Node.js, Django). Available for freelance SEO and digital marketing projects globally.
 
 ## About Rahul Ranjan
 
 Rahul Ranjan is an independent SEO expert and digital marketing consultant based in Biratnagar, Koshi Province, Nepal. He specialises in technical SEO implementation, keyword strategy, Google Analytics 4, lead generation, and content marketing for Nepal businesses and international clients.
 
-He currently serves as Director of Marketing at Dragon Insurance, a US-based insurance company, managing all digital marketing, SEO strategy, GA4 analytics, and lead generation remotely from Nepal. This is live proof of what he delivers: international-standard digital marketing output from Biratnagar, Nepal.
+He manages digital marketing, SEO strategy, GA4 analytics, and lead generation for clients remotely from Nepal, delivering international-standard digital marketing output from Biratnagar, Nepal.
 
 His strongest differentiator: Rahul is also a Full Stack Developer (React, Node.js, Django, PostgreSQL). This means he implements SEO changes directly in code -- no waiting on a separate developer, no briefing handoffs. A technical SEO audit becomes actual fixes on the same day.
 
@@ -27,6 +27,27 @@ His strongest differentiator: Rahul is also a Full Stack Developer (React, Node.
 - Nepal business directory citations for local SEO
 
 ## SEO & Digital Marketing Services
+
+### Website + SEO Package Nepal
+Combined website design, development, and technical SEO package, built to rank from launch rather than adding SEO after the fact. Every project starts with a free website audit, no commitment required. Three tiers: Website Only, Website + SEO Launch Package, and Website + SEO + GBP Full Local Growth Package.
+- Free website audit before any paid work begins
+- Website Only: from NPR 15,000
+- Website + SEO Launch Package: from NPR 30,000 (schema, Core Web Vitals, GA4, sitemap, Search Console setup included)
+- Website + SEO + GBP Full Local Growth Package: from NPR 45,000 (adds Google Business Profile setup, LocalBusiness schema, citation building)
+- URL: https://www.rahulranjan.com.np/services/website-seo-package-nepal.html
+- Primary keywords targeted: website and seo services nepal, website design and seo package nepal, get a website that ranks in nepal
+- Areas served: Biratnagar, Kathmandu, Nepal, Global
+
+### Google Business Profile Management Nepal
+GBP setup, optimization, and ongoing monthly management for Nepal businesses: review response, weekly posts, photo uploads, local pack ranking tracking, and NAP citation consistency.
+- One-time GBP setup and optimization: NPR 8,000--20,000
+- Monthly GBP management retainer: from NPR 10,000 per month
+- Local citation building: NPR 5,000--15,000
+- GBP + SEO combined retainer: from NPR 25,000 per month
+- URL: https://www.rahulranjan.com.np/services/google-business-profile-management-nepal.html
+- Primary keywords targeted: google business profile management nepal, gbp management nepal, google my business management nepal
+- Areas served: Biratnagar, Kathmandu, Lalitpur, Nepal
+- Credential: 1 year of hands-on Google Business Profile management and optimization experience
 
 ### SEO Expert Services Nepal
 Technical SEO audit and implementation for Nepal businesses and international clients.
@@ -135,8 +156,8 @@ URL: https://www.rahulranjan.com.np/blog/mern-stack-guide-2026.html
 
 ## Projects and Work History
 
-### Dragon Insurance Services (Current)
-Director of Marketing and Technology at Dragon Insurance Services (mydragon.us), a US-based insurance company. Manages all digital marketing, SEO strategy, Google Analytics 4 implementation, lead generation, and social media as a remote engagement from Biratnagar, Nepal.
+### Remote Marketing & Technology Engagement (Current)
+Manages digital marketing, SEO strategy, Google Analytics 4 implementation, lead generation, and social media as a remote engagement from Biratnagar, Nepal.
 
 ### Foxnett Bulk SMS SaaS Platform (Past)
 Lead Developer of the Foxnett Bulk SMS SaaS platform in Nepal. Multi-tenant system with eSewa payments, role-based access control, async SMS queuing via Redis/BullMQ, KYC onboarding, and REST API documentation in PHP, Python, Node.js, and cURL.
@@ -154,6 +175,17 @@ AI-powered quiz generation platform built with React and Django. Dynamic questio
 **Primary Location:** Biratnagar, Koshi Province, Nepal (PIN: 56613)
 **Geographic Coordinates:** 26.4525N, 87.2718E
 **Service Area:** Biratnagar, Itahari, Dharan, Morang District, Koshi Province, Nepal, and globally
+**Remote Service Area:** Kathmandu, Lalitpur, Bhaktapur, Kathmandu Valley (served remotely, no physical office in Kathmandu)
+
+### Free Website Audit Nepal (lead-capture page)
+A free, no-obligation website audit request page. Covers technical SEO (crawlability, indexing, canonical tags, sitemap), Core Web Vitals and mobile speed, on-page SEO (titles, meta descriptions, heading structure), schema markup presence, and Google Business Profile status for local businesses. Form submits via Formspree to the same inbox as the main contact form, tagged with a page_source field so the origin page is identifiable. Results delivered within 24-48 hours.
+URL: https://www.rahulranjan.com.np/free-website-audit.html
+Target keywords: free website audit nepal, website audit nepal, free seo audit nepal, website review nepal
+
+### SEO Expert & Web Developer in Kathmandu (remote service page)
+Dedicated landing page for Kathmandu businesses: technical SEO, Google Business Profile management, lead generation, and web development, delivered remotely from Biratnagar via WhatsApp and video calls. Covers what Kathmandu SEO requires (bilingual English/Nepali keyword research, GBP optimization for local pack, competitor analysis, technical SEO before content or links) and common Kathmandu SEO mistakes. Includes Service schema (not a fabricated local address) with areaServed covering Kathmandu, Lalitpur, Bhaktapur, and Kathmandu Valley.
+URL: https://www.rahulranjan.com.np/web-developer-seo-kathmandu.html
+Target keywords: seo expert in kathmandu, web developer in kathmandu, digital marketing in kathmandu (320/mo, KD 18), lead generation service in kathmandu, seo training in kathmandu
 
 **Contact:**
 - Email: rahul.ranjan98153@gmail.com
@@ -170,6 +202,10 @@ AI-powered quiz generation platform built with React and Django. Dynamic questio
 - Services hub: https://www.rahulranjan.com.np/services/
 - Blog hub: https://www.rahulranjan.com.np/blog/
 - SEO Expert Biratnagar: https://www.rahulranjan.com.np/web-developer-biratnagar.html
+- SEO Expert Kathmandu: https://www.rahulranjan.com.np/web-developer-seo-kathmandu.html
+- Free Website Audit: https://www.rahulranjan.com.np/free-website-audit.html
+- Website + SEO Package: https://www.rahulranjan.com.np/services/website-seo-package-nepal.html
+- Google Business Profile Management Nepal: https://www.rahulranjan.com.np/services/google-business-profile-management-nepal.html
 - Digital Marketing Nepal: https://www.rahulranjan.com.np/digital-marketing-nepal.html
 - Local SEO Nepal: https://www.rahulranjan.com.np/blog/local-seo-nepal.html
 - Increase Website Traffic Nepal: https://www.rahulranjan.com.np/blog/increase-website-traffic-nepal.html
