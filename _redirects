@@ -1,0 +1,12 @@
+# Cloudflare Pages redirects
+# Format: <from>  <to>  <status>
+
+# --- Aug 2026 consolidation ---------------------------------------------
+# blog/seo-services-nepal-guide.html duplicated the "hire an SEO in Nepal" intent
+# already owned by blog/seo-expert-nepal.html. Its unique sections (results timeline,
+# technical vs on-page vs links priority order) were migrated into the pillar first.
+/blog/seo-services-nepal-guide.html  /blog/seo-expert-nepal.html  301
+
+# --- legacy image paths (renamed Aug 2026 for image search) --------------
+/images/profilepic.jpg               /images/rahul-ranjan-seo-expert-nepal.jpg  301
+/images/foxnett-dashboard.png        /images/foxnett-bulk-sms-saas-dashboard-nepal.jpg  301

@@ -11,13 +11,13 @@
   <meta property="og:title" content="SaaS Development Nepal - Build Your SaaS Product | Rahul Ranjan">
   <meta property="og:description" content="SaaS development from a Nepal-based Developer who built a production multi-tenant SMS SaaS. React, Node.js, PostgreSQL, Redis.">
   <meta property="og:url" content="https://www.rahulranjan.com.np/services/saas-development-nepal.html">
-  <meta property="og:image" content="https://www.rahulranjan.com.np/images/profilepic.jpg">
+  <meta property="og:image" content="https://www.rahulranjan.com.np/images/rahul-ranjan-seo-expert-nepal-og.jpg">
   <meta property="og:type" content="website">
   <meta name="keywords" content="SaaS development Nepal, build SaaS Nepal, SaaS developer Nepal, multi-tenant SaaS Nepal, eSewa payment Nepal, startup Nepal, SaaS MVP Nepal">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="SaaS Development Nepal - Build Your SaaS Product | Rahul Ranjan">
   <meta name="twitter:description" content="SaaS development from Nepal's most experienced SaaS builder. Multi-tenant, eSewa payments, REST API. Shipped Foxnett Bulk SMS SaaS to production.">
-  <meta name="twitter:image" content="https://www.rahulranjan.com.np/images/profilepic.jpg">
+  <meta name="twitter:image" content="https://www.rahulranjan.com.np/images/rahul-ranjan-seo-expert-nepal-og.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="shortcut icon" href="/images/profile_image.png" type="image/x-icon">
@@ -169,6 +169,42 @@
         </table>
       </div>
 
+      <h2 class="text-3xl font-bold mb-4">What Building SaaS in Nepal Actually Involves</h2>
+      <p class="text-gray-600 mb-6">Most SaaS projects in Nepal do not fail on the frontend. They fail on the parts customers never see: billing that cannot handle a failed eSewa callback, no tenant isolation so one customer can read another's data, or a job queue that silently drops messages under load. These are the pieces I build first.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+        <div class="p-5 bg-gray-50 border border-gray-200 rounded-xl">
+          <h3 class="font-bold mb-2 text-base">Multi-tenancy from day one</h3>
+          <p class="text-sm text-gray-600">Every query is scoped to a tenant at the database layer, not in application code where a missed filter leaks data between customers. Retrofitting this later usually means a rewrite.</p>
+        </div>
+        <div class="p-5 bg-gray-50 border border-gray-200 rounded-xl">
+          <h3 class="font-bold mb-2 text-base">Nepal payment reality</h3>
+          <p class="text-sm text-gray-600">eSewa and Khalti behave differently from Stripe. Both need server-to-server verification, because trusting the browser redirect alone is how SaaS products in Nepal get billed for usage nobody paid for. I have shipped eSewa verification in production.</p>
+        </div>
+        <div class="p-5 bg-gray-50 border border-gray-200 rounded-xl">
+          <h3 class="font-bold mb-2 text-base">Queues for anything slow</h3>
+          <p class="text-sm text-gray-600">Sending SMS, generating invoices and processing uploads belong in a Redis-backed queue with retries, not in the request cycle. This is the difference between a product that survives its first busy day and one that times out.</p>
+        </div>
+        <div class="p-5 bg-gray-50 border border-gray-200 rounded-xl">
+          <h3 class="font-bold mb-2 text-base">KYC and compliance</h3>
+          <p class="text-sm text-gray-600">Nepal SaaS handling payments or telecom services typically needs document upload, verification states and an audit trail. Designing this in early is far cheaper than adding it once you have live customers.</p>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-bold mb-4">Realistic SaaS Budgets and Timelines</h2>
+      <div class="overflow-x-auto mb-10">
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-primary text-white">
+            <th class="p-4 text-left rounded-tl-xl">Stage</th><th class="p-4 text-left">Price (NPR)</th><th class="p-4 text-left rounded-tr-xl">Timeline</th>
+          </tr></thead>
+          <tbody class="divide-y divide-gray-200">
+            <tr class="bg-white"><td class="p-4 font-medium">Clickable prototype, one core flow</td><td class="p-4">60,000 - 120,000</td><td class="p-4 text-gray-500">2 - 4 weeks</td></tr>
+            <tr class="bg-gray-50"><td class="p-4 font-medium">MVP with auth, billing and one workflow</td><td class="p-4">200,000 - 400,000</td><td class="p-4 text-gray-500">2 - 3 months</td></tr>
+            <tr class="bg-white"><td class="p-4 font-medium">Production SaaS, multi-tenant with API</td><td class="p-4">500,000 - 1,200,000</td><td class="p-4 text-gray-500">4 - 8 months</td></tr>
+          </tbody>
+        </table>
+        <p class="text-xs text-gray-400 mt-2">If your idea is unproven, start with the prototype. Spending 400,000 before a single customer has paid is the most common way SaaS money is wasted.</p>
+      </div>
+
       <h2 class="text-3xl font-bold mb-8">FAQ</h2>
       <div class="space-y-4 mb-12">
         <details class="border border-gray-200 rounded-xl overflow-hidden"><summary class="px-5 py-4 cursor-pointer font-semibold">How much does SaaS development cost in Nepal?</summary><div class="px-5 pb-4 text-gray-600">SaaS cost depends heavily on feature scope, third-party integrations, number of user roles, and timeline. Contact with your requirements for a scoped estimate - every project is different.</div></details>
@@ -200,7 +236,6 @@
   <i class="fab fa-whatsapp"></i>
   <span>Chat on WhatsApp</span>
 </a>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>
