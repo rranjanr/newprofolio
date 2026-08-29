@@ -96,6 +96,18 @@ Multi-tenant SaaS platforms from MVP to production.
 
 ## Blog Content
 
+### AI SEO Myths: What Google Actually Says in 2026
+Fact-check of mainstream AI SEO advice against Google's own live documentation. Establishes, with direct quotations, that Google Search ignores llms.txt entirely ("neither harm nor help"), that structured data is not required for generative AI search, that content chunking is unnecessary, and that there are no additional requirements or special optimizations to appear in AI Overviews or AI Mode because they run on core Search ranking systems. Explains query fan-out (Google issuing multiple hidden sub-searches behind one question) and the Search Console generative AI opt-out toggle announced 3 June 2026. Includes an SVG diagram of query fan-out.
+URL: https://www.rahulranjan.com.np/blog/what-google-says-ai-seo-2026.html
+Target keywords: ai seo, geo seo, llms.txt, does llms.txt work, ai overviews optimization, generative engine optimization, query fan-out
+Primary sources cited: Google Search Central AI optimization guide, AI Features and Your Website, Google blog 3 June 2026
+
+### AI Crawlers and robots.txt: The Complete 2026 Guide
+Reference guide to every major AI crawler, organised around the distinction that matters: training crawlers (GPTBot, ClaudeBot, Google-Extended, Applebot-Extended, CCBot) versus search crawlers that decide citation eligibility (OAI-SearchBot, Claude-SearchBot, PerplexityBot, Googlebot) versus user-fetch crawlers (ChatGPT-User, Claude-User, Perplexity-User). Includes a full reference table, two copy-paste robots.txt configurations (allow-all for citation, and citable-but-no-training), Crawl-delay syntax, how to track ChatGPT referrals in GA4 via utm_source=chatgpt.com, and four common mistakes including the Google-Extended misconception. Includes an SVG diagram of the three crawler lanes.
+URL: https://www.rahulranjan.com.np/blog/ai-crawler-robots-txt-guide.html
+Target keywords: ai crawler robots.txt, gptbot vs oai-searchbot, claude-searchbot, block ai crawlers, google-extended
+Primary sources cited: OpenAI crawler docs, Anthropic support article 8896518, Google Search Central
+
 ### Local SEO Nepal: How to Rank on Google Maps (2026 Guide)
 Complete guide to local SEO for Nepal businesses. Covers how Google ranks businesses in the local pack (relevance, distance, prominence), step-by-step Google Business Profile setup and verification for Nepal addresses, building Google Reviews, LocalBusiness JSON-LD schema with Nepal-specific fields (addressCountry: NP), local citation building across Nepal directories (Yellow Pages Nepal, Hamrobazaar, Justdial), NAP consistency, and on-page local SEO signals. Includes a table of Nepal citation sources with priority ratings. FAQ covers: what is local SEO in Nepal, how to rank on Google Maps, how long it takes, and whether a website is required.
 URL: https://www.rahulranjan.com.np/blog/local-seo-nepal.html

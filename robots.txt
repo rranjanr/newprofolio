@@ -1,56 +1,102 @@
-# Allow all crawlers including AI bots
+# robots.txt for rahulranjan.com.np
+# Last reviewed: 2026-08-23
+#
+# Crawler names verified against primary documentation:
+#   Google    developers.google.com/search/docs/crawling-indexing/overview-google-crawlers
+#   OpenAI    developers.openai.com/api/docs/bots
+#   Anthropic support.claude.com (article 8896518)
+#
+# IMPORTANT DISTINCTION: for most AI companies the TRAINING crawler and the
+# SEARCH crawler are different user-agents. Blocking the search crawler makes a
+# site invisible inside that assistant's answers. Blocking only the training
+# crawler keeps search visibility while opting out of model training.
+# This site allows both, because being cited is the goal.
+
+# ── Default ────────────────────────────────────────────────────────────────
 User-agent: *
 Allow: /
 
-# Google AI
+# ── Google ─────────────────────────────────────────────────────────────────
+# Googlebot governs BOTH classic Search and the AI experiences (AI Overviews,
+# AI Mode). Google states AI is built into Search, so robots.txt for Googlebot
+# is the control. There is no separate AI Overviews crawler to allow.
 User-agent: Googlebot
 Allow: /
 
-# Google AI Overview / Gemini
+# Google-Extended controls Gemini app grounding and model training only.
+# It does NOT affect AI Overviews or AI Mode visibility in Search.
 User-agent: Google-Extended
 Allow: /
 
-# OpenAI / ChatGPT
-User-agent: GPTBot
+User-agent: Googlebot-Image
 Allow: /
 
-# OpenAI search index
+# ── OpenAI ─────────────────────────────────────────────────────────────────
+# OAI-SearchBot = inclusion in ChatGPT search results. Block this and the site
+# cannot be surfaced or cited in ChatGPT.
 User-agent: OAI-SearchBot
 Allow: /
 
-# ChatGPT browsing plugin
+# GPTBot = model training. Separate decision from search visibility.
+User-agent: GPTBot
+Allow: /
+
+# ChatGPT-User = live fetch when a user asks ChatGPT to open a link.
 User-agent: ChatGPT-User
 Allow: /
 
-# Perplexity
-User-agent: PerplexityBot
+# ── Anthropic (Claude) ─────────────────────────────────────────────────────
+# Three distinct agents, all respecting robots.txt.
+# Claude-SearchBot = search result quality (the one that matters for citation).
+User-agent: Claude-SearchBot
 Allow: /
 
-# Anthropic / Claude
-User-agent: anthropic-ai
+# Claude-User = fetches a page when a Claude user asks about it.
+User-agent: Claude-User
 Allow: /
 
-# Claude AI web search
+# ClaudeBot = training data collection.
 User-agent: ClaudeBot
 Allow: /
 
-# Meta AI
-User-agent: FacebookBot
+# Legacy token, retained for older infrastructure that still sends it.
+User-agent: anthropic-ai
 Allow: /
 
-# Apple AI
+# ── Perplexity ─────────────────────────────────────────────────────────────
+User-agent: PerplexityBot
+Allow: /
+
+# Perplexity-User = live fetch for a specific user request.
+User-agent: Perplexity-User
+Allow: /
+
+# ── Microsoft / Bing ───────────────────────────────────────────────────────
+User-agent: bingbot
+Allow: /
+
+# ── Apple ──────────────────────────────────────────────────────────────────
 User-agent: Applebot
 Allow: /
 
-# Amazon Alexa
+# Applebot-Extended governs Apple foundation-model training only.
+User-agent: Applebot-Extended
+Allow: /
+
+# ── Meta ───────────────────────────────────────────────────────────────────
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# ── Other AI crawlers ──────────────────────────────────────────────────────
 User-agent: Amazonbot
 Allow: /
 
-# Cohere AI
 User-agent: cohere-ai
 Allow: /
 
-# Common AI training crawlers
 User-agent: CCBot
 Allow: /
 
@@ -58,6 +104,12 @@ User-agent: Bytespider
 Allow: /
 
 User-agent: YouBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: MistralAI-User
 Allow: /
 
 Sitemap: https://www.rahulranjan.com.np/sitemap.xml

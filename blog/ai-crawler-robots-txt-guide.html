@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Crawlers &amp; robots.txt: The Complete 2026 Guide (Copy-Paste)</title>
+  <meta name="description" content="Every AI crawler in 2026 explained: GPTBot vs OAI-SearchBot, ClaudeBot vs Claude-SearchBot, Google-Extended. Block the wrong one and you disappear from AI answers. Copy-paste robots.txt included.">
+  <link rel="canonical" href="https://www.rahulranjan.com.np/blog/ai-crawler-robots-txt-guide.html">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="Rahul Ranjan">
+  <meta property="og:title" content="AI Crawlers &amp; robots.txt: The Complete 2026 Guide (Copy-Paste)">
+  <meta property="og:description" content="GPTBot vs OAI-SearchBot, ClaudeBot vs Claude-SearchBot, Google-Extended. The training-versus-search distinction that decides whether AI can cite you.">
+  <meta property="og:url" content="https://www.rahulranjan.com.np/blog/ai-crawler-robots-txt-guide.html">
+  <meta property="og:image" content="https://www.rahulranjan.com.np/images/rahul-ranjan-seo-expert-nepal-og.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_NP">
+  <meta name="keywords" content="ai crawler robots.txt, gptbot vs oai-searchbot, claude-searchbot, block ai crawlers, google-extended, ai bot blocking, perplexitybot, robots txt ai 2026">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Crawlers &amp; robots.txt: The Complete 2026 Guide">
+  <meta name="twitter:description" content="Block the wrong AI bot and you vanish from ChatGPT and Claude answers. Every crawler, explained, with copy-paste config.">
+  <meta name="twitter:image" content="https://www.rahulranjan.com.np/images/rahul-ranjan-seo-expert-nepal-og.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="/images/profile_image.png" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "AI Crawlers and robots.txt: The Complete 2026 Guide",
+    "description": "Every major AI crawler in 2026, the difference between training crawlers and search crawlers, and a copy-paste robots.txt configuration.",
+    "datePublished": "2026-08-23",
+    "dateModified": "2026-08-23",
+    "author": {"@id": "https://www.rahulranjan.com.np/#rahul-ranjan"},
+    "publisher": {"@id": "https://www.rahulranjan.com.np/#rahul-ranjan"},
+    "mainEntityOfPage": "https://www.rahulranjan.com.np/blog/ai-crawler-robots-txt-guide.html",
+    "url": "https://www.rahulranjan.com.np/blog/ai-crawler-robots-txt-guide.html",
+    "image": "https://www.rahulranjan.com.np/images/rahul-ranjan-seo-expert-nepal-og.jpg",
+    "inLanguage": "en",
+    "keywords": ["ai crawler", "robots.txt", "GPTBot", "OAI-SearchBot", "ClaudeBot", "Claude-SearchBot", "Google-Extended", "PerplexityBot"],
+    "citation": [
+      {"@type": "CreativeWork", "name": "Overview of OpenAI Crawlers", "url": "https://developers.openai.com/api/docs/bots"},
+      {"@type": "CreativeWork", "name": "Does Anthropic crawl data from the web", "url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler"},
+      {"@type": "CreativeWork", "name": "AI Features and Your Website, Google Search Central", "url": "https://developers.google.com/search/docs/appearance/ai-features"}
+    ],
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rahulranjan.com.np/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.rahulranjan.com.np/blog/"},
+        {"@type": "ListItem", "position": 3, "name": "AI Crawler Guide", "item": "https://www.rahulranjan.com.np/blog/ai-crawler-robots-txt-guide.html"}
+      ]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between GPTBot and OAI-SearchBot?",
+        "acceptedAnswer": {"@type": "Answer", "text": "GPTBot collects content that may be used for training OpenAI models. OAI-SearchBot is the crawler that makes a site eligible to be surfaced and cited inside ChatGPT search results. They are separate user-agents and separate decisions. Blocking GPTBot opts you out of training while keeping ChatGPT search visibility. Blocking OAI-SearchBot removes your site from ChatGPT search results entirely, which is the mistake most sites make when they try to block AI."}
+      },
+      {
+        "@type": "Question",
+        "name": "Does blocking Google-Extended remove me from AI Overviews?",
+        "acceptedAnswer": {"@type": "Answer", "text": "No. Google-Extended controls Gemini app grounding and model training. It does not control AI Overviews or AI Mode. Google states that AI is built into Search and that robots.txt directives for Googlebot are the control for site owners. To manage AI Overviews specifically, use the Search Console generative AI toggle announced in June 2026, or page-level nosnippet, data-nosnippet and max-snippet tags."}
+      },
+      {
+        "@type": "Question",
+        "name": "What are Anthropic's three crawlers?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Anthropic operates three distinct crawlers, all of which respect robots.txt. ClaudeBot collects web content that may contribute to model training. Claude-SearchBot navigates the web to improve search result quality, so it is the one that matters for being cited in Claude's answers. Claude-User fetches a page when an individual Claude user asks a question that requires accessing that site. Each is controlled by its own user-agent block in robots.txt."}
+      },
+      {
+        "@type": "Question",
+        "name": "How do I track traffic from ChatGPT in Google Analytics?",
+        "acceptedAnswer": {"@type": "Answer", "text": "ChatGPT automatically appends utm_source=chatgpt.com to referral URLs, so visits appear in Google Analytics 4 without any setup on your side. In GA4 open Reports, then Acquisition, then Traffic acquisition, and add Session source / medium as the dimension to find chatgpt.com. Perplexity and other assistants typically arrive as ordinary referrals from their own domains."}
+      },
+      {
+        "@type": "Question",
+        "name": "Should a small business block AI crawlers?",
+        "acceptedAnswer": {"@type": "Answer", "text": "For most service businesses, no. Being cited in an AI answer is free distribution to someone actively researching your service. Blocking makes sense mainly for publishers whose revenue depends on the pageview itself, or for sites with proprietary content they do not want in training data. A reasonable middle position is to allow the search crawlers such as OAI-SearchBot and Claude-SearchBot while blocking the training crawlers such as GPTBot and ClaudeBot."}
+      }
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#2563EB',secondary:'#059669',dark:'#0F172A',light:'#F8FAFC'},fontFamily:{sans:['Inter','sans-serif']}}}}</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHSBCEGMD4"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XHSBCEGMD4');</script>
+  <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "xixyxw6am4");</script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="A3fUj9Ix+DWtRvNRZZbfZA" async></script>
+  <style>
+    .fig{background:#fff;border:1px solid #E2E8F0;border-radius:12px;padding:20px;margin:22px 0}
+    .fig figcaption{font-size:12.5px;color:#64748B;margin-top:12px;text-align:center}
+    .fig svg{display:block;width:100%;height:auto}
+    .code{background:#0F172A;color:#E2E8F0;border-radius:12px;padding:18px 20px;overflow-x:auto;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.75;margin:16px 0}
+    .code .c{color:#64748B}
+    .code .k{color:#7DD3FC}
+    .code .v{color:#86EFAC}
+    .lane{border-radius:10px;padding:14px 16px;border:1px solid}
+    .lane-train{background:#FEF3C7;border-color:#FDE68A}
+    .lane-search{background:#DCFCE7;border-color:#BBF7D0}
+    .lane-user{background:#DBEAFE;border-color:#BFDBFE}
+  </style>
+</head>
+<body class="bg-light text-dark min-h-screen flex flex-col">
+<div class="read-progress" id="readProgress"></div>
+
+<header class="sticky top-0 z-50 bg-white/95 shadow-lg backdrop-blur-sm">
+  <div class="container mx-auto px-4">
+    <nav class="py-3 flex justify-between items-center" aria-label="Main navigation">
+      <a href="/" class="text-2xl font-bold flex items-center">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white mr-3"><i class="fas fa-code"></i></div>
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Rahul Ranjan</span>
+      </a>
+      <button id="mobile-menu-button" aria-label="Toggle navigation menu" class="md:hidden focus:outline-none bg-primary/10 p-2.5 rounded-lg hover:bg-primary/20 transition-colors"><i class="fas fa-bars text-xl text-primary"></i></button>
+      <div class="hidden md:flex items-center gap-1">
+        <a href="/" class="nav-link">Home</a><a href="/#about" class="nav-link">About</a><a href="/#projects" class="nav-link">Projects</a><a href="/services/" class="nav-link">Services</a><a href="/blog/" class="nav-link">Blog</a>
+        <a href="/#contact" class="nav-cta ml-3"><i class="fas fa-paper-plane text-xs"></i> Hire Me</a>
+      </div>
+    </nav>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden"><div class="px-4 py-4 space-y-1"><a href="/" class="nav-link">Home</a><a href="/#about" class="nav-link">About</a><a href="/#projects" class="nav-link">Projects</a><a href="/services/" class="nav-link">Services</a><a href="/blog/" class="nav-link">Blog</a><div class="pt-3 pb-1"><a href="/#contact" class="nav-cta" style="justify-content:center;width:100%;display:flex;"><i class="fas fa-paper-plane text-xs"></i> Hire Me</a></div></div></div>
+</header>
+
+<main class="flex-grow">
+  <section class="py-12 bg-gradient-to-br from-blue-50 via-white to-emerald-50">
+    <div class="container mx-auto px-4 max-w-3xl">
+      <nav aria-label="Breadcrumb" class="mb-6">
+        <ol class="flex flex-wrap gap-2 text-sm text-gray-500">
+          <li><a href="/" class="hover:text-primary">Home</a></li><li>/</li>
+          <li><a href="/blog/" class="hover:text-primary">Blog</a></li><li>/</li>
+          <li class="text-primary font-medium">AI Crawler Guide</li>
+        </ol>
+      </nav>
+      <span class="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">Technical SEO</span>
+      <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">AI Crawlers and robots.txt: The Complete 2026 Guide</h1>
+      <div class="article-meta-row">
+        <span><i class="fas fa-user-circle mr-1"></i> <a href="/">Rahul Ranjan</a></span>
+        <span class="article-meta-sep">&middot;</span>
+        <span><i class="fas fa-calendar-alt mr-1"></i> August 23, 2026</span>
+        <span class="article-meta-sep">&middot;</span>
+        <span><i class="fas fa-clock mr-1"></i> 10 min read</span>
+        <span class="article-meta-sep">&middot;</span>
+        <a href="/blog/"><i class="fas fa-arrow-left mr-1"></i> Back to Blog</a>
+      </div>
+      <p class="text-lg text-gray-700 leading-relaxed mt-4">Most sites that tried to "block AI" in the last two years blocked the wrong bot. They kept the training crawler and removed the search crawler, which is precisely backwards: they still fed the models and simply deleted themselves from the answers. Here is every crawler that matters, what each one actually controls, and a config you can paste today.</p>
+    </div>
+  </section>
+
+  <article class="py-12">
+    <div class="container mx-auto px-4 max-w-3xl">
+      <div class="prose-article">
+
+        <div class="p-5 bg-blue-50 border-l-4 border-primary rounded-r-xl mb-8">
+          <p class="font-bold text-primary mb-2"><i class="fas fa-bolt mr-1"></i> The one thing to understand</p>
+          <p class="text-sm text-gray-700 mb-0">Every major AI company runs <strong>at least two different crawlers</strong>. One gathers training data. A different one decides whether you can be cited in that assistant's answers. They are separate user-agents, and they are separate business decisions. Confusing them is the single most expensive robots.txt mistake being made right now.</p>
+        </div>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4" style="color:var(--text-1)">Three jobs, three kinds of crawler</h2>
+        <p class="text-gray-700 mb-4 leading-relaxed">Before touching any config, it helps to see the shape of the system. AI crawlers fall into three lanes, and only one of them affects whether an assistant can cite you.</p>
+
+        <figure class="fig">
+          <svg viewBox="0 0 700 360" role="img" aria-labelledby="laneTitle laneDesc" xmlns="http://www.w3.org/2000/svg">
+            <title id="laneTitle">The three types of AI crawler</title>
+            <desc id="laneDesc">Training crawlers such as GPTBot, ClaudeBot and Google-Extended feed model training and do not affect citation. Search crawlers such as OAI-SearchBot, Claude-SearchBot and PerplexityBot decide whether a site can be cited in AI answers. User-fetch crawlers such as ChatGPT-User and Claude-User retrieve a page live when a person asks about it.</desc>
+
+            <rect x="8" y="8" width="684" height="104" rx="12" fill="#FEF3C7" stroke="#FDE68A"/>
+            <text x="26" y="36" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#92400E">1. Training crawlers</text>
+            <text x="26" y="56" font-family="Inter,sans-serif" font-size="11" fill="#78350F">Collect content that may train future models. Blocking these does NOT hide you from AI answers.</text>
+            <g font-family="ui-monospace,monospace" font-size="11">
+              <rect x="26" y="68" width="86" height="28" rx="6" fill="#fff" stroke="#FDE68A"/><text x="69" y="86" text-anchor="middle" fill="#92400E">GPTBot</text>
+              <rect x="122" y="68" width="98" height="28" rx="6" fill="#fff" stroke="#FDE68A"/><text x="171" y="86" text-anchor="middle" fill="#92400E">ClaudeBot</text>
+              <rect x="230" y="68" width="130" height="28" rx="6" fill="#fff" stroke="#FDE68A"/><text x="295" y="86" text-anchor="middle" fill="#92400E">Google-Extended</text>
+              <rect x="370" y="68" width="142" height="28" rx="6" fill="#fff" stroke="#FDE68A"/><text x="441" y="86" text-anchor="middle" fill="#92400E">Applebot-Extended</text>
+              <rect x="522" y="68" width="72" height="28" rx="6" fill="#fff" stroke="#FDE68A"/><text x="558" y="86" text-anchor="middle" fill="#92400E">CCBot</text>
+            </g>
+
+            <rect x="8" y="124" width="684" height="104" rx="12" fill="#DCFCE7" stroke="#86EFAC"/>
+            <text x="26" y="152" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#166534">2. Search crawlers: these decide citation</text>
+            <text x="26" y="172" font-family="Inter,sans-serif" font-size="11" fill="#14532D">Build the index the assistant answers from. Block one of these and you vanish from that assistant.</text>
+            <g font-family="ui-monospace,monospace" font-size="11">
+              <rect x="26" y="184" width="126" height="28" rx="6" fill="#fff" stroke="#86EFAC"/><text x="89" y="202" text-anchor="middle" fill="#166534">OAI-SearchBot</text>
+              <rect x="162" y="184" width="142" height="28" rx="6" fill="#fff" stroke="#86EFAC"/><text x="233" y="202" text-anchor="middle" fill="#166534">Claude-SearchBot</text>
+              <rect x="314" y="184" width="122" height="28" rx="6" fill="#fff" stroke="#86EFAC"/><text x="375" y="202" text-anchor="middle" fill="#166534">PerplexityBot</text>
+              <rect x="446" y="184" width="90" height="28" rx="6" fill="#fff" stroke="#86EFAC"/><text x="491" y="202" text-anchor="middle" fill="#166534">Googlebot</text>
+              <rect x="546" y="184" width="76" height="28" rx="6" fill="#fff" stroke="#86EFAC"/><text x="584" y="202" text-anchor="middle" fill="#166534">bingbot</text>
+            </g>
+
+            <rect x="8" y="240" width="684" height="104" rx="12" fill="#DBEAFE" stroke="#BFDBFE"/>
+            <text x="26" y="268" font-family="Inter,sans-serif" font-size="13" font-weight="700" fill="#1E3A8A">3. User-fetch crawlers</text>
+            <text x="26" y="288" font-family="Inter,sans-serif" font-size="11" fill="#1E40AF">Fetch one page live because a person asked about it. Blocking these breaks "read this link for me".</text>
+            <g font-family="ui-monospace,monospace" font-size="11">
+              <rect x="26" y="300" width="120" height="28" rx="6" fill="#fff" stroke="#BFDBFE"/><text x="86" y="318" text-anchor="middle" fill="#1E3A8A">ChatGPT-User</text>
+              <rect x="156" y="300" width="112" height="28" rx="6" fill="#fff" stroke="#BFDBFE"/><text x="212" y="318" text-anchor="middle" fill="#1E3A8A">Claude-User</text>
+              <rect x="278" y="300" width="132" height="28" rx="6" fill="#fff" stroke="#BFDBFE"/><text x="344" y="318" text-anchor="middle" fill="#1E3A8A">Perplexity-User</text>
+            </g>
+          </svg>
+          <figcaption>Only the green lane controls whether an AI assistant can cite you. Blocking the amber lane opts you out of training without hurting visibility.</figcaption>
+        </figure>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4" style="color:var(--text-1)">The full crawler reference</h2>
+        <div class="overflow-x-auto mb-8">
+          <table class="w-full text-sm border-collapse">
+            <thead><tr class="bg-gray-800 text-white">
+              <th class="p-3 text-left rounded-tl-xl">User-agent</th><th class="p-3 text-left">Company</th><th class="p-3 text-left">Purpose</th><th class="p-3 text-left rounded-tr-xl">Block = ?</th>
+            </tr></thead>
+            <tbody class="divide-y divide-gray-200 text-xs">
+              <tr class="bg-white"><td class="p-3 font-mono font-semibold">Googlebot</td><td class="p-3">Google</td><td class="p-3">Search + AI Overviews + AI Mode</td><td class="p-3 text-red-600">Invisible in Google entirely</td></tr>
+              <tr class="bg-gray-50"><td class="p-3 font-mono font-semibold">Google-Extended</td><td class="p-3">Google</td><td class="p-3">Gemini grounding, model training</td><td class="p-3 text-amber-700">No effect on AI Overviews</td></tr>
+              <tr class="bg-white"><td class="p-3 font-mono font-semibold">OAI-SearchBot</td><td class="p-3">OpenAI</td><td class="p-3">ChatGPT search inclusion</td><td class="p-3 text-red-600">Gone from ChatGPT search</td></tr>
+              <tr class="bg-gray-50"><td class="p-3 font-mono font-semibold">GPTBot</td><td class="p-3">OpenAI</td><td class="p-3">Model training</td><td class="p-3 text-amber-700">Opts out of training only</td></tr>
+              <tr class="bg-white"><td class="p-3 font-mono font-semibold">ChatGPT-User</td><td class="p-3">OpenAI</td><td class="p-3">Live fetch on user request</td><td class="p-3 text-amber-700">Users cannot open your links</td></tr>
+              <tr class="bg-gray-50"><td class="p-3 font-mono font-semibold">Claude-SearchBot</td><td class="p-3">Anthropic</td><td class="p-3">Search result quality</td><td class="p-3 text-red-600">Gone from Claude answers</td></tr>
+              <tr class="bg-white"><td class="p-3 font-mono font-semibold">Claude-User</td><td class="p-3">Anthropic</td><td class="p-3">Live fetch on user request</td><td class="p-3 text-amber-700">Users cannot open your links</td></tr>
+              <tr class="bg-gray-50"><td class="p-3 font-mono font-semibold">ClaudeBot</td><td class="p-3">Anthropic</td><td class="p-3">Model training</td><td class="p-3 text-amber-700">Opts out of training only</td></tr>
+              <tr class="bg-white"><td class="p-3 font-mono font-semibold">PerplexityBot</td><td class="p-3">Perplexity</td><td class="p-3">Search index</td><td class="p-3 text-red-600">Gone from Perplexity</td></tr>
+              <tr class="bg-gray-50"><td class="p-3 font-mono font-semibold">Applebot-Extended</td><td class="p-3">Apple</td><td class="p-3">Apple model training</td><td class="p-3 text-amber-700">Training opt-out only</td></tr>
+              <tr class="bg-white"><td class="p-3 font-mono font-semibold">meta-externalagent</td><td class="p-3">Meta</td><td class="p-3">Meta AI training and products</td><td class="p-3 text-amber-700">Training opt-out</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="p-5 bg-amber-50 border border-amber-200 rounded-xl mb-8">
+          <h3 class="font-bold text-amber-900 mb-2 text-sm"><i class="fas fa-circle-info mr-1"></i> The Google-Extended trap</h3>
+          <p class="text-xs text-gray-700 mb-0">A lot of Nepal sites added <code class="bg-white px-1 rounded">Google-Extended: Disallow</code> believing it removes them from AI Overviews. It does not. Google-Extended governs Gemini grounding and training. AI Overviews and AI Mode run on Googlebot, because Google states AI is built into Search itself. If you genuinely want out of AI Overviews, use the Search Console generative AI toggle or page-level <code class="bg-white px-1 rounded">nosnippet</code>, not Google-Extended.</p>
+        </div>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4" style="color:var(--text-1)">Copy-paste: allow AI citation (recommended for most businesses)</h2>
+        <p class="text-gray-700 mb-4 leading-relaxed">For a service business, being quoted in an AI answer is free distribution to someone actively researching what you sell. This config allows everything, and is what I run on this site.</p>
+        <div class="code"><span class="c"># Allow AI assistants to find and cite this site</span><br>
+<span class="k">User-agent:</span> <span class="v">*</span><br>
+<span class="k">Allow:</span> <span class="v">/</span><br><br>
+<span class="c"># Google (AI Overviews + AI Mode ride on Googlebot)</span><br>
+<span class="k">User-agent:</span> <span class="v">Googlebot</span><br>
+<span class="k">Allow:</span> <span class="v">/</span><br><br>
+<span class="c"># OpenAI: search inclusion, then training, then user fetch</span><br>
+<span class="k">User-agent:</span> <span class="v">OAI-SearchBot</span><br>
+<span class="k">Allow:</span> <span class="v">/</span><br>
+<span class="k">User-agent:</span> <span class="v">GPTBot</span><br>
+<span class="k">Allow:</span> <span class="v">/</span><br>
+<span class="k">User-agent:</span> <span class="v">ChatGPT-User</span><br>
+<span class="k">Allow:</span> <span class="v">/</span><br><br>
+<span class="c"># Anthropic: three separate agents</span><br>
+<span class="k">User-agent:</span> <span class="v">Claude-SearchBot</span><br>
+<span class="k">Allow:</span> <span class="v">/</span><br>
+<span class="k">User-agent:</span> <span class="v">Claude-User</span><br>
+<span class="k">Allow:</span> <span class="v">/</span><br>
+<span class="k">User-agent:</span> <span class="v">ClaudeBot</span><br>
+<span class="k">Allow:</span> <span class="v">/</span><br><br>
+<span class="c"># Perplexity</span><br>
+<span class="k">User-agent:</span> <span class="v">PerplexityBot</span><br>
+<span class="k">Allow:</span> <span class="v">/</span><br><br>
+<span class="k">Sitemap:</span> <span class="v">https://yourdomain.com/sitemap.xml</span></div>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4" style="color:var(--text-1)">Copy-paste: stay citable, opt out of training</h2>
+        <p class="text-gray-700 mb-4 leading-relaxed">This is the balanced position: your content can still be found and cited, but is not collected for model training. Useful if you publish original research or proprietary analysis.</p>
+        <div class="code"><span class="c"># Keep search visibility</span><br>
+<span class="k">User-agent:</span> <span class="v">OAI-SearchBot</span><br>
+<span class="k">Allow:</span> <span class="v">/</span><br>
+<span class="k">User-agent:</span> <span class="v">Claude-SearchBot</span><br>
+<span class="k">Allow:</span> <span class="v">/</span><br>
+<span class="k">User-agent:</span> <span class="v">PerplexityBot</span><br>
+<span class="k">Allow:</span> <span class="v">/</span><br><br>
+<span class="c"># Opt out of model training</span><br>
+<span class="k">User-agent:</span> <span class="v">GPTBot</span><br>
+<span class="k">Disallow:</span> <span class="v">/</span><br>
+<span class="k">User-agent:</span> <span class="v">ClaudeBot</span><br>
+<span class="k">Disallow:</span> <span class="v">/</span><br>
+<span class="k">User-agent:</span> <span class="v">Google-Extended</span><br>
+<span class="k">Disallow:</span> <span class="v">/</span><br>
+<span class="k">User-agent:</span> <span class="v">Applebot-Extended</span><br>
+<span class="k">Disallow:</span> <span class="v">/</span><br>
+<span class="k">User-agent:</span> <span class="v">CCBot</span><br>
+<span class="k">Disallow:</span> <span class="v">/</span></div>
+
+        <div class="p-5 bg-gray-50 border border-gray-200 rounded-xl mb-8">
+          <h3 class="font-bold mb-2 text-sm">Rate-limiting instead of blocking</h3>
+          <p class="text-xs text-gray-700 mb-2">If the problem is server load rather than principle, Anthropic supports the non-standard <code class="bg-white px-1 rounded">Crawl-delay</code> extension:</p>
+          <div class="code" style="margin:0"><span class="k">User-agent:</span> <span class="v">ClaudeBot</span><br><span class="k">Crawl-delay:</span> <span class="v">1</span></div>
+          <p class="text-xs text-gray-600 mt-2 mb-0">Anthropic also notes that blocking by IP address is unreliable, because it can prevent the crawler reading your robots.txt in the first place, and they do not publish fixed IP ranges since they use provider IPs.</p>
+        </div>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4" style="color:var(--text-1)">How to actually measure AI traffic</h2>
+        <p class="text-gray-700 mb-4 leading-relaxed">Allowing the crawlers is pointless if you never check whether it produced anything. The good news is ChatGPT tags its referrals automatically.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <div class="p-5 bg-white border border-gray-200 rounded-xl">
+            <h3 class="font-bold mb-2 text-sm"><i class="fas fa-chart-line text-primary mr-1"></i> In Google Analytics 4</h3>
+            <p class="text-xs text-gray-600 mb-2">ChatGPT appends <code class="bg-gray-100 px-1 rounded">utm_source=chatgpt.com</code> to outgoing links, so no setup is needed.</p>
+            <p class="text-xs text-gray-600 mb-0">Go to <strong>Reports &rarr; Acquisition &rarr; Traffic acquisition</strong>, then switch the dimension to <strong>Session source / medium</strong> and look for <code class="bg-gray-100 px-1 rounded">chatgpt.com</code>. Perplexity and Claude typically arrive as ordinary referrals from their own domains.</p>
+          </div>
+          <div class="p-5 bg-white border border-gray-200 rounded-xl">
+            <h3 class="font-bold mb-2 text-sm"><i class="fas fa-magnifying-glass text-secondary mr-1"></i> In Search Console</h3>
+            <p class="text-xs text-gray-600 mb-2">Google added generative AI performance reporting in June 2026, showing impressions and which pages appear in AI responses, by country.</p>
+            <p class="text-xs text-gray-600 mb-0">It rolled out in stages by country, and currently reports impressions rather than clicks, so treat it as a visibility signal rather than a traffic number.</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4" style="color:var(--text-1)">Four mistakes worth avoiding</h2>
+        <div class="space-y-3 mb-8">
+          <div class="flex items-start gap-3 p-4 bg-red-50 border border-red-100 rounded-xl">
+            <i class="fas fa-xmark text-red-500 mt-0.5 flex-shrink-0"></i>
+            <div><p class="font-semibold text-red-800 text-sm">Blocking the search bot while allowing the training bot</p><p class="text-red-700 text-xs mt-0.5">The exact inverse of what almost everyone intends. You still contribute to training and lose all citation visibility.</p></div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-red-50 border border-red-100 rounded-xl">
+            <i class="fas fa-xmark text-red-500 mt-0.5 flex-shrink-0"></i>
+            <div><p class="font-semibold text-red-800 text-sm">Assuming Google-Extended controls AI Overviews</p><p class="text-red-700 text-xs mt-0.5">It does not. It governs Gemini and training. AI Overviews follow Googlebot and the Search Console toggle.</p></div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-red-50 border border-red-100 rounded-xl">
+            <i class="fas fa-xmark text-red-500 mt-0.5 flex-shrink-0"></i>
+            <div><p class="font-semibold text-red-800 text-sm">Using only the legacy <code>anthropic-ai</code> token</p><p class="text-red-700 text-xs mt-0.5">Anthropic's current agents are ClaudeBot, Claude-SearchBot and Claude-User. A robots.txt listing only the old token misses the two that matter.</p></div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-red-50 border border-red-100 rounded-xl">
+            <i class="fas fa-xmark text-red-500 mt-0.5 flex-shrink-0"></i>
+            <div><p class="font-semibold text-red-800 text-sm">Blocking by IP or firewall rule</p><p class="text-red-700 text-xs mt-0.5">Cloudflare bot rules and IP blocks frequently catch legitimate crawlers and, as Anthropic notes, can stop a crawler reading robots.txt at all. Control access in robots.txt, not at the firewall.</p></div>
+          </div>
+        </div>
+
+        <p class="text-gray-700 mb-6 leading-relaxed">One closing caveat: robots.txt governs whether a crawler may fetch you, not whether an assistant will choose to cite you. That second question is about whether the content deserves citing, which is a content problem rather than a config problem. I dug into what Google says actually drives that in <a href="/blog/what-google-says-ai-seo-2026.html" class="text-primary font-semibold hover:underline">AI SEO myths: what Google actually says</a>.</p>
+
+        <div class="mt-10 p-8 bg-gradient-to-br from-blue-600 to-emerald-600 text-white rounded-2xl">
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <img src="/images/rahul-ranjan-seo-expert-nepal.jpg" alt="Rahul Ranjan, technical SEO specialist in Nepal" class="w-20 h-20 rounded-full object-cover border-4 border-white/30 flex-shrink-0" loading="lazy" width="80" height="80">
+            <div class="text-center md:text-left">
+              <p class="text-sm text-blue-100 font-semibold mb-1">Not sure what your robots.txt is doing?</p>
+              <h3 class="text-xl font-bold mb-2">I will check it free</h3>
+              <p class="text-blue-100 text-sm mb-4">Part of every free website audit is confirming that no AI search crawler is being blocked by accident, and that your pages are indexed and snippet-eligible in the first place.</p>
+              <a href="/free-website-audit.html?src=ai-crawler-guide" class="bg-white text-primary font-bold px-5 py-2.5 rounded-xl hover:bg-blue-50 transition-colors text-sm inline-block">Get a free audit</a>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-bold mt-12 mb-6" style="color:var(--text-1)">Frequently Asked Questions</h2>
+        <div class="space-y-4 mb-8">
+          <details class="group p-5 bg-white border border-gray-200 rounded-xl cursor-pointer">
+            <summary class="font-semibold text-gray-900 flex items-center justify-between list-none">What is the difference between GPTBot and OAI-SearchBot?<i class="fas fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0 ml-2"></i></summary>
+            <p class="text-sm text-gray-600 mt-3 leading-relaxed">GPTBot collects content that may train OpenAI models. OAI-SearchBot makes your site eligible to appear and be cited in ChatGPT search. Blocking GPTBot opts you out of training while keeping search visibility. Blocking OAI-SearchBot removes you from ChatGPT search results.</p>
+          </details>
+          <details class="group p-5 bg-white border border-gray-200 rounded-xl cursor-pointer">
+            <summary class="font-semibold text-gray-900 flex items-center justify-between list-none">Does blocking Google-Extended remove me from AI Overviews?<i class="fas fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0 ml-2"></i></summary>
+            <p class="text-sm text-gray-600 mt-3 leading-relaxed">No. Google-Extended controls Gemini grounding and training, not AI Overviews or AI Mode. Those run on Googlebot because AI is built into Search. Use the Search Console generative AI toggle, or nosnippet and max-snippet at page level.</p>
+          </details>
+          <details class="group p-5 bg-white border border-gray-200 rounded-xl cursor-pointer">
+            <summary class="font-semibold text-gray-900 flex items-center justify-between list-none">What are Anthropic's three crawlers?<i class="fas fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0 ml-2"></i></summary>
+            <p class="text-sm text-gray-600 mt-3 leading-relaxed">ClaudeBot collects content that may contribute to training. Claude-SearchBot improves search result quality and is the one that matters for citation. Claude-User fetches a page when a user asks about it. All three respect robots.txt and each has its own user-agent block.</p>
+          </details>
+          <details class="group p-5 bg-white border border-gray-200 rounded-xl cursor-pointer">
+            <summary class="font-semibold text-gray-900 flex items-center justify-between list-none">How do I track ChatGPT traffic in Google Analytics?<i class="fas fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0 ml-2"></i></summary>
+            <p class="text-sm text-gray-600 mt-3 leading-relaxed">ChatGPT automatically appends utm_source=chatgpt.com to referral URLs, so it appears in GA4 with no setup. Open Reports, then Acquisition, then Traffic acquisition, and switch the dimension to Session source / medium to find chatgpt.com.</p>
+          </details>
+          <details class="group p-5 bg-white border border-gray-200 rounded-xl cursor-pointer">
+            <summary class="font-semibold text-gray-900 flex items-center justify-between list-none">Should a small business block AI crawlers?<i class="fas fa-chevron-down text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0 ml-2"></i></summary>
+            <p class="text-sm text-gray-600 mt-3 leading-relaxed">Usually no. Being cited is free distribution to someone actively researching your service. Blocking mainly suits publishers who monetise the pageview itself. A middle path is allowing the search crawlers while blocking the training crawlers.</p>
+          </details>
+        </div>
+
+        <h2 class="text-2xl font-bold mt-10 mb-4" style="color:var(--text-1)">Sources</h2>
+        <ul class="text-sm text-gray-700 space-y-2 mb-6">
+          <li><i class="fas fa-link text-primary mr-2"></i><a href="https://developers.openai.com/api/docs/bots" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Overview of OpenAI Crawlers</a></li>
+          <li><i class="fas fa-link text-primary mr-2"></i><a href="https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Anthropic: does Anthropic crawl data from the web, and how can site owners block the crawler</a></li>
+          <li><i class="fas fa-link text-primary mr-2"></i><a href="https://developers.google.com/search/docs/appearance/ai-features" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">AI Features and Your Website, Google Search Central</a></li>
+          <li><i class="fas fa-link text-primary mr-2"></i><a href="https://help.openai.com/en/articles/9237897-chatgpt-search" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">OpenAI: Searching the web with ChatGPT</a></li>
+        </ul>
+        <p class="text-xs text-gray-500">Crawler names verified against vendor documentation on 23 August 2026. These change, so re-check before relying on an old config.</p>
+
+      </div>
+
+      <div class="share-row mt-8">
+        <span class="share-label"><i class="fas fa-share-alt mr-1"></i> Share:</span>
+        <a href="https://twitter.com/intent/tweet?url=https://www.rahulranjan.com.np/blog/ai-crawler-robots-txt-guide.html&text=Most+sites+that+blocked+AI+blocked+the+wrong+bot.+The+complete+2026+crawler+guide." target="_blank" rel="noopener" class="share-btn x-twitter"><i class="fab fa-x-twitter"></i> X / Twitter</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.rahulranjan.com.np/blog/ai-crawler-robots-txt-guide.html" target="_blank" rel="noopener" class="share-btn linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+        <button class="share-btn copy-link" data-share-copy><i class="fas fa-link"></i> Copy Link</button>
+      </div>
+
+      <div class="author-bio-card">
+        <img src="/images/rahul-ranjan-seo-expert-nepal.jpg" alt="Rahul Ranjan, technical SEO specialist in Nepal" class="author-bio-img" loading="lazy" width="64" height="64">
+        <div>
+          <p class="author-bio-name">Rahul Ranjan</p>
+          <p class="author-bio-role">Independent SEO Expert &amp; Digital Marketing Consultant &middot; Biratnagar, Nepal</p>
+          <p class="author-bio-text">I manage SEO, analytics, and lead generation, and I implement fixes in code rather than handing over a report. Crawler configuration is one of the few SEO areas where a single wrong line has an immediate, total effect.</p>
+          <div class="author-bio-links">
+            <a href="https://www.linkedin.com/in/rahul-ranjan-dev/" target="_blank" rel="noopener noreferrer" class="author-bio-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="/free-website-audit.html?src=ai-crawler-bio" class="author-bio-link"><i class="fas fa-magnifying-glass"></i> Free Audit</a>
+            <a href="/#contact" class="author-bio-link"><i class="fas fa-paper-plane"></i> Hire Me</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12">
+        <h3 class="text-xl font-bold mb-6">Related Articles</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <a href="/blog/what-google-says-ai-seo-2026.html" class="glass-effect p-4 rounded-xl hover:shadow-md transition-shadow">
+            <span class="text-xs text-purple-600 font-semibold">Primary Sources</span>
+            <p class="font-semibold mt-1 text-sm">AI SEO Myths: What Google Actually Says</p>
+          </a>
+          <a href="/blog/technical-seo-checklist-nepal.html" class="glass-effect p-4 rounded-xl hover:shadow-md transition-shadow">
+            <span class="text-xs text-emerald-600 font-semibold">Checklist</span>
+            <p class="font-semibold mt-1 text-sm">Technical SEO Checklist for Nepal Businesses</p>
+          </a>
+          <a href="/blog/seo-geo-aeo-ai-search-2026.html" class="glass-effect p-4 rounded-xl hover:shadow-md transition-shadow">
+            <span class="text-xs text-blue-600 font-semibold">Strategy</span>
+            <p class="font-semibold mt-1 text-sm">SEO, GEO &amp; AEO in 2026</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="bg-dark text-white py-8">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4">Rahul Ranjan</h3>
+        <p class="text-gray-400 text-sm">Independent SEO Expert &amp; Digital Marketing Consultant based in Biratnagar, Nepal.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">SEO Resources</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="/services/seo-services-nepal.html" class="hover:text-white transition-colors">SEO Price in Nepal</a></li>
+          <li><a href="/blog/seo-expert-nepal.html" class="hover:text-white transition-colors">SEO Expert in Nepal</a></li>
+          <li><a href="/blog/what-google-says-ai-seo-2026.html" class="hover:text-white transition-colors">AI SEO Myths</a></li>
+          <li><a href="/free-website-audit.html" class="hover:text-white transition-colors">Free Website Audit</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Contact</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="/#contact" class="hover:text-white transition-colors"><i class="fas fa-paper-plane mr-1"></i> Hire Me</a></li>
+          <li><a href="mailto:rahul.ranjan98153@gmail.com" class="hover:text-white transition-colors"><i class="fas fa-envelope mr-1"></i> rahul.ranjan98153@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/rahul-ranjan-dev/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors"><i class="fab fa-linkedin mr-1"></i> LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 mt-8 pt-6 text-center text-gray-500 text-sm">
+      <p>&copy; 2026 Rahul Ranjan | Independent SEO Expert &amp; Digital Marketing Consultant, Biratnagar, Nepal.</p>
+    </div>
+  </div>
+</footer>
+<a href="https://wa.me/9779805360131?text=Hi%20Rahul%2C%20I%20read%20your%20AI%20crawler%20guide." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i><span>Chat on WhatsApp</span>
+</a>
+<script src="../js/main.js"></script>
+<script>
+  window.addEventListener('scroll', () => {
+    const el = document.getElementById('readProgress');
+    if (!el) return;
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    el.style.width = Math.min(pct, 100) + '%';
+  });
+</script>
+</body>
+</html>
