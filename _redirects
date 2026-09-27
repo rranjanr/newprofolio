@@ -10,3 +10,13 @@
 # --- legacy image paths (renamed Aug 2026 for image search) --------------
 /images/profilepic.jpg               /images/rahul-ranjan-seo-expert-nepal.jpg  301
 /images/foxnett-dashboard.png        /images/foxnett-bulk-sms-saas-dashboard-nepal.jpg  301
+
+# --- Sep 2026 crawl-budget recovery -------------------------------------
+# /index.html served 200 alongside / and was being crawled as a duplicate
+# ("Alternate page with proper canonical" in GSC), spending crawl budget on a
+# site where several real pages had never been crawled at all.
+/index.html                          /                          301
+
+# Old CV was indexed and ranking (position 8.1), so it redirects rather than 404s.
+/Rahul%20Ranjan.pdf                  /Rahul_Ranjan_CV.pdf       301
+/Rahul Ranjan.pdf                    /Rahul_Ranjan_CV.pdf       301

@@ -8,3 +8,8 @@ Thumbs.db
 # Editor directories
 .vscode/
 .idea/
+
+# Analytics exports and keyword strategy: these sit in the deployed root and
+# would be publicly downloadable from the live domain. Keep them out of the repo.
+*.xlsx
+*.csv

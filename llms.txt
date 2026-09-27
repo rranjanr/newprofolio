@@ -1,20 +1,29 @@
-# Rahul Ranjan - Independent SEO Expert & Digital Marketing Consultant
+# Rahul Ranjan - SEO & Digital Growth Specialist | Full Stack Developer
 
-> Independent SEO Expert and Digital Marketing Consultant based in Biratnagar, Nepal. Technical SEO, Google Analytics 4, social media strategy, lead generation, and content marketing. Also a Full Stack Developer (React, Node.js, Django). Available for freelance SEO and digital marketing projects globally.
+> SEO and digital growth specialist and full stack developer based in Biratnagar, Nepal. Covers technical SEO, Meta and Google Ads, Google Business Profile, analytics, content and creative, and builds the sites and internal tools in Next.js. Works with small businesses and with agencies needing white-label or overflow capacity. Available for freelance work globally.
 
 ## About
 
-Rahul Ranjan is an independent SEO expert and digital marketing consultant based in Biratnagar, Koshi Province, Nepal. He specialises in technical SEO, keyword strategy, Google Analytics 4 implementation, and lead generation for Nepal businesses and international clients.
+Rahul Ranjan is an SEO and digital growth specialist and full stack developer based in Biratnagar, Koshi Province, Nepal. He handles the whole growth stack for a client: technical SEO and keyword strategy, Meta and Google Ads, Google Business Profile, Google Analytics 4, content and creative, and the Next.js development behind it.
 
-He manages digital marketing, SEO strategy, GA4 analytics, and lead generation for clients remotely from Nepal. He is also a Full Stack Developer, which means he implements SEO changes directly in code without requiring a separate developer.
+Because he is both the marketer and the developer, a technical SEO finding becomes a shipped fix the same day, with no dev queue and no briefing handoff. This makes him a practical fit for companies and agencies with limited budgets that would otherwise need to hire an SEO consultant, a media buyer, a designer and a developer separately.
 
-Key credentials:
-- Independent SEO Expert: technical SEO audits, keyword research (Semrush Pro), schema markup, Core Web Vitals optimisation, Google Search Console
-- Google Business Profile management: 1 year of hands-on GBP setup, optimisation, and ongoing management experience
-- Google Analytics 4 certified: custom event tracking, conversion goals, Looker Studio dashboards
-- Full Stack Developer: React, Next.js, Node.js, Django, PostgreSQL -- able to implement SEO fixes directly
-- Nepal market expertise: local keyword research, Nepal business directories, eSewa/Khalti integrations
-- Based in Biratnagar, Koshi Province, Nepal (available in-person locally), also serving Kathmandu remotely
+Key credentials and verifiable results:
+- Grew organic clicks 271% (154 to 571) in 90 days on mydragon.us, a Next.js site he built from scratch, alongside a 325% increase in referral traffic from AI assistants including ChatGPT and Perplexity
+- Built an internal CRM and operations platform in Next.js for netsecure360.com: drag-and-drop sales pipeline tracking 400+ prospects, staff and task management, invoicing and billing
+- Shipped 140+ commits across 100+ production deployments
+- Ranks #1 for "seo expert in biratnagar", a checkable result rather than a claim
+- His own guide on AI crawlers and robots.txt is the top-performing page on this site, ranking position 1 for several AI-crawler queries
+- Google Analytics 4 certified; Semrush Pro user; 1 year of hands-on Google Business Profile management
+- Bachelor in Computer Applications (BCA), Tribhuvan University, Nepal
+
+What he does, in one place:
+- SEO: technical audits, keyword research, schema markup, Core Web Vitals, Search Console, local SEO and Google Business Profile
+- Paid ads and social: Meta Ads (Facebook and Instagram), Google Ads, TikTok, campaign reporting
+- Content and creative: content planning, graphic design, video editing, AI video generation (Higgsfield), AI image generation
+- Development: Next.js, React, Node.js, PostgreSQL, REST APIs, WordPress, Vercel hosting, domains and DNS, Google Workspace
+
+Best fit for: small businesses and agencies on limited budgets that need one accountable person covering marketing and engineering, rather than hiring separate specialists.
 
 ## Services
 
@@ -42,6 +51,10 @@ Key credentials:
 - [Next.js vs React for Nepal Startups](https://www.rahulranjan.com.np/blog/nextjs-vs-react-nepal-startups.html)
 - [MERN Stack Guide 2026](https://www.rahulranjan.com.np/blog/mern-stack-guide-2026.html)
 - [SEO, GEO, AEO and AI Search 2026](https://www.rahulranjan.com.np/blog/seo-geo-aeo-ai-search-2026.html)
+
+## For international and US clients
+
+- [Hire Rahul Remotely (US hours)](https://www.rahulranjan.com.np/hire-remote-seo-developer.html) -- One contractor covering technical SEO, Meta and Google Ads, content, and Next.js development for US and international companies. Currently works with US-based companies, keeps overlapping US business hours, and communicates directly with no account manager in between.
 
 ## Location Pages
 

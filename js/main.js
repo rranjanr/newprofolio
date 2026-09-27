@@ -628,15 +628,16 @@ function initStatCounters() {
             if (!entry.isIntersecting) return;
             const el = entry.target;
             const target = parseInt(el.getAttribute('data-stat-target'), 10);
+            const suffix = el.getAttribute('data-stat-suffix') || '+';
             const duration = 900;
             const start = performance.now();
             const step = (now) => {
                 const elapsed = now - start;
                 const progress = Math.min(elapsed / duration, 1);
                 const eased = 1 - Math.pow(1 - progress, 3);
-                el.textContent = Math.round(eased * target) + '+';
+                el.textContent = Math.round(eased * target) + suffix;
                 if (progress < 1) requestAnimationFrame(step);
-                else el.textContent = target + '+';
+                else el.textContent = target + suffix;
             };
             requestAnimationFrame(step);
             observer.unobserve(el);
@@ -733,26 +734,45 @@ function initProjectGalleries() {
 
 // Tag contact form submissions with which page sent the lead (?src= query param)
 (function tagContactFormSource() {
+    // Derives the inquiry source from the referring page instead of a ?src=
+    // query parameter. Query params created crawlable duplicate URLs that ate
+    // crawl budget on a site where several pages had never been crawled.
+    var labels = {
+        'web-developer-seo-kathmandu': 'Kathmandu SEO/web page inquiry',
+        'web-developer-biratnagar': 'Biratnagar page inquiry',
+        'google-business-profile-management-nepal': 'Google Business Profile management inquiry',
+        'website-seo-package-nepal': 'Website + SEO package inquiry',
+        'seo-services-nepal': 'SEO pricing page inquiry',
+        'web-development-nepal': 'Web development inquiry',
+        'react-development-nepal': 'React/Next.js development inquiry',
+        'saas-development-nepal': 'SaaS development inquiry',
+        'digital-marketing-nepal': 'Digital marketing inquiry',
+        'seo-expert-nepal': 'SEO expert guide inquiry',
+        'local-seo-nepal': 'Local SEO guide inquiry',
+        'increase-website-traffic-nepal': 'Website traffic guide inquiry',
+        'technical-seo-checklist-nepal': 'Technical SEO checklist inquiry',
+        'freelance-seo-expert-nepal': 'SEO freelancer guide inquiry',
+        'seo-geo-aeo-ai-search-2026': 'AI search guide inquiry',
+        'what-google-says-ai-seo-2026': 'AI SEO myths article inquiry',
+        'ai-crawler-robots-txt-guide': 'AI crawler guide inquiry',
+        'seo-training-nepal': 'SEO training inquiry',
+        'cost-of-web-development-nepal': 'Web development cost inquiry'
+    };
     function setup() {
         var pageSourceField = document.getElementById('page-source');
         if (!pageSourceField) return;
-        var src = new URLSearchParams(window.location.search).get('src');
-        if (!src) return;
-
-        var labels = {
-            'kathmandu-page': 'Kathmandu SEO/web page inquiry',
-            'gbp-page': 'Google Business Profile management inquiry',
-            'website-seo-package': 'Website + SEO package inquiry',
-            'website-seo-package-launch': 'Website + SEO Launch Package inquiry',
-            'biratnagar-page': 'Biratnagar page inquiry'
-        };
-        var label = labels[src] || src;
-        pageSourceField.value = label;
-
-        var subjectField = document.getElementById('subject');
-        if (subjectField && !subjectField.value) {
-            subjectField.value = label;
-        }
+        var ref = document.referrer || '';
+        if (!ref) return;
+        try {
+            var u = new URL(ref);
+            if (u.hostname !== window.location.hostname) return;
+            var slug = u.pathname.split('/').pop().replace(/\.html$/, '');
+            var label = labels[slug];
+            if (!label) return;
+            pageSourceField.value = label;
+            var subjectField = document.getElementById('subject');
+            if (subjectField && !subjectField.value) subjectField.value = label;
+        } catch (e) { /* malformed referrer, leave the field alone */ }
     }
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', setup);

@@ -15,6 +15,11 @@
 # ── Default ────────────────────────────────────────────────────────────────
 User-agent: *
 Allow: /
+# Project documentation text files are unlinked reference material, not pages.
+# Blocked so they cannot be indexed as thin content. The IMAGES in that directory
+# are deliberately left crawlable because they appear in the image sitemap.
+Disallow: /Project%20Document/*.txt$
+Disallow: /Project Document/*.txt$
 
 # ── Google ─────────────────────────────────────────────────────────────────
 # Googlebot governs BOTH classic Search and the AI experiences (AI Overviews,
